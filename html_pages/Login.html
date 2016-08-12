@@ -1,0 +1,88 @@
+<head>
+    <style>
+
+
+        #button{
+            color: white;
+
+            width: 30%;
+            margin-bottom: 10%;
+            background-color: #E66C54;
+        }
+
+        body{
+            background-color: #f2f2f2;
+
+        }
+        .div1{
+
+            background-color: white;
+            margin-top: 5%;
+            margin-left: 37%;
+            margin-bottom: 1%;
+            width:25%;
+            height: 60%;
+            border-radius: 5px;
+        }
+        .card-image{
+            height:10%;
+            width:30%;
+            margin-left: 35%;
+            margin-top: 5%;
+        }
+        .input1{
+            margin-left: 3.5%;
+            width:93%;
+            padding-top: 3%;
+        }
+        .input2{
+            margin-left: 3.5%;
+            width:93%;
+            margin-top: -4%;
+        }
+        .md-raised{
+            margin-left: 3%;
+            width:93%;
+            height: 7%;
+        }
+
+        .fpass{
+        //margin-top: 15%;
+            margin-left: 45%;
+        }
+        .nreg{
+            margin-top: 1%;
+
+        }
+    </style>
+</head>
+<body>
+    <form name="Form1" ng-submit="OnLogin()">
+
+        <img src="img/capture2.PNG" class="card-image">
+
+        <div class="div1">
+            <md-input-container class="md-block input1" flex-gt-sm>
+                <label>Email Or Mobile No</label>
+                <input ng-model="user.Username">
+            </md-input-container>
+
+            <md-input-container class="md-block input2" flex-gt-sm>
+                <label>Password</label>
+                <input ng-model="user.Password" type="password">
+            </md-input-container>
+
+            <center> <md-button class="md-raised" id="button">Login</md-button></center>
+        </div>
+
+        <div class="fpass">
+            <a href="abc" style="color: #2E3E4B">Forgot Password?</a>
+        </div>
+
+        <center><div class="nreg">
+            <label>Not Register Yet??</label>
+            <a href="abc" style="color: #2E3E4B">Sign Up</a>
+        </div></center>
+
+    </form>
+</body>
