@@ -1,0 +1,100 @@
+<head>
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+
+        .div1{
+
+            background-color: white;
+            margin-top: 4%;
+            margin-left: 36%;
+            margin-bottom: 1%;
+            width:30%;
+            height: 60%;
+            border-radius: 5px;
+        }
+
+        .card-image{
+            height:10%;
+            width:30%;
+            margin-left: 35%;
+            margin-top: 1%;
+        }
+
+        .input2{
+            margin-left: 3.5%;
+            width:93%;
+            margin-top: -4%;
+        }
+
+        .radiobutton{
+            margin-left: 3.5%;
+        }
+
+        #button{
+            color: white;
+            width: 30%;
+            margin-bottom: 10%;
+            background-color: #E66C54;
+        }
+
+        .checkbox{
+            margin-left: 3.5%;
+            margin-top: -2%;
+        }
+    </style>
+</head>
+<body>
+<form name="Form2" ng-submit="OnRegister()">
+
+    <img src="img/capture2.PNG" class="card-image">
+
+    <div class="div1">
+        <md-input-container class="md-block input2" flex-gt-sm>
+            <label>Your Name</label>
+            <input ng-model="user.name" required>
+        </md-input-container>
+
+        <md-input-container class="md-block input2" flex-gt-sm>
+            <label>Enetr Email</label>
+            <input ng-model="user.email" type="email" required>
+        </md-input-container>
+
+        <md-input-container class="md-block input2" flex-gt-sm>
+            <label>Password</label>
+            <input ng-model="user.password" type="password" required>
+        </md-input-container>
+
+        <md-input-container class="md-block input2" flex-gt-sm>
+            <label>Retupe Password</label>
+            <input ng-model="user.cpassword" type="password" required>
+        </md-input-container>
+
+        <md-input-container class="md-block input2" flex-gt-sm>
+            <label>Your Company Name</label>
+            <input ng-model="user.company_name" required>
+        </md-input-container>
+
+        <md-input-container class="md-block input2" flex-gt-sm>
+            <label>Your Address</label>
+            <input ng-model="user.address" type="text" required>
+        </md-input-container>
+
+        <md-radio-group ng-model="user.type" class="radiobutton">
+            <label>Register As:</label>
+            <md-radio-button value="Apple" class="md-primary">Weaver</md-radio-button>
+            <md-radio-button value="Banana" class="md-primary">Wholesaler</md-radio-button>
+        </md-radio-group>
+
+
+
+        <md-checkbox ng-model="terms" aria-label="Checkbox 1" class="checkbox">
+            <a href="#Terms&condition" style="color: #2E3E4B">Terms And Condition</a>
+        </md-checkbox>
+
+        <center> <md-button class="md-raised" id="button">Register</md-button></center>
+    </div>
+
+</form>
+</body>

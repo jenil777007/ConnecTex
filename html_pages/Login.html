@@ -64,12 +64,12 @@
         <div class="div1">
             <md-input-container class="md-block input1" flex-gt-sm>
                 <label>Email Or Mobile No</label>
-                <input ng-model="user.Username">
+                <input ng-model="user.Username" required>
             </md-input-container>
 
             <md-input-container class="md-block input2" flex-gt-sm>
                 <label>Password</label>
-                <input ng-model="user.Password" type="password">
+                <input ng-model="user.Password" type="password" required>
             </md-input-container>
 
             <center> <md-button class="md-raised" id="button">Login</md-button></center>
@@ -81,7 +81,7 @@
 
         <center><div class="nreg">
             <label>Not Register Yet??</label>
-            <a href="abc" style="color: #2E3E4B">Sign Up</a>
+            <a href="#Register" style="color: #2E3E4B">Sign Up</a>
         </div></center>
 
     </form>

@@ -6,6 +6,11 @@ app.config(function ($routeProvider) {
             templateUrl : 'html_pages/Login.html',
             controller: 'LoginCtrl'
         })
+        .when('/Register',{
+            templateUrl : 'html_pages/Register.html',
+            controller: 'RegisterCtrl'
+        })
+        
         .otherwise({
             redirectTo : '/'
         });
