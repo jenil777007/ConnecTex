@@ -8,9 +8,27 @@
     <script src="lib/angular-aria.min.js"></script>
     <script src="lib/angular-material.min.js"></script>
     <script src="lib/angular-route.min.js"></script>
+    <link rel="stylesheet" href="lib/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/anim.css">
 
 </head>
 <body ng-app="myapp">
+<div class="cssload-thecube se-pre-con" id="divCenter">
+    <div class="cssload-cube cssload-c1"></div>
+    <div class="cssload-cube cssload-c2"></div>
+    <div class="cssload-cube cssload-c4"></div>
+    <div class="cssload-cube cssload-c3"></div>
+
+    <script>
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeIn('slow').delay(4000).fadeOut("slow");
+        });
+    </script>
+</div>
 
     <div ng-view></div>
 
