@@ -10,7 +10,10 @@ app.config(function ($routeProvider) {
             templateUrl : 'html_pages/Register.html',
             controller: 'RegisterCtrl'
         })
-        
+        .when('/Next',{
+            templateUrl : 'html_pages/Next.html',
+            controller: 'NextCtrl'
+        })
         .otherwise({
             redirectTo : '/'
         });

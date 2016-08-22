@@ -1,7 +1,8 @@
 var app = angular.module('myapp');
 
-app.controller("LoginCtrl",["$scope","$http","$location",function ($scope,$http,$location) {
+app.controller("LoginCtrl",["$scope","$http","$location","$timeout",function ($scope,$http,$location,$timeout) {
 
+    $scope.isloaded = false;
     console.log("welocme");
     $scope.user = {};
     $scope.OnLogin = function() {
@@ -55,6 +56,8 @@ app.controller("LoginCtrl",["$scope","$http","$location",function ($scope,$http,
          });
          };*/
     }
-
+   $timeout(function () {
+        $scope.isloaded = true;
+    }, 2500);
 
 }]);

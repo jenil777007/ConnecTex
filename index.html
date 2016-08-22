@@ -25,16 +25,17 @@
     <script>
         $(window).load(function() {
             // Animate loader off screen
-            $(".se-pre-con").fadeIn('slow').delay(4000).fadeOut("slow");
+            $(".se-pre-con").fadeIn('slow').delay(2500).fadeOut("slow");
         });
     </script>
 </div>
 
-    <div ng-view></div>
+    <div ng-view ng-cloak></div>
 
     <script src="controller/Route.js"></script>
     <script src="controller/LoginCtrl.js"></script>
     <script src="controller/RegisterCtrl.js"></script>
+<script src="controller/NextCtrl.js"></script>
 
 </body>
 </html>
