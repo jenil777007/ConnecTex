@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/Config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/LoginCtrl.js" afterPath="$PROJECT_DIR$/controller/LoginCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/NextCtrl.js" afterPath="$PROJECT_DIR$/controller/NextCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Login.html" afterPath="$PROJECT_DIR$/html_pages/Login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="ConnecTex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,8 +79,8 @@
       <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHP/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="510">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -360,7 +354,7 @@
       <workItem from="1471426639501" duration="52000" />
       <workItem from="1471604478586" duration="2739000" />
       <workItem from="1471846827680" duration="1734000" />
-      <workItem from="1471888754164" duration="13774000" />
+      <workItem from="1471888754164" duration="13877000" />
     </task>
     <task id="LOCAL-00001" summary="Added Title">
       <created>1470232391017</created>
@@ -411,11 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471893155741</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="phase 2 final">
+      <created>1472029941790</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1472029941790</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32408000" />
+    <option name="totallyTimeSpent" value="32511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -455,7 +456,8 @@
     <MESSAGE value="Added Title 4" />
     <MESSAGE value="login page" />
     <MESSAGE value="phase 1 final" />
-    <option name="LAST_COMMIT_MESSAGE" value="phase 1 final" />
+    <MESSAGE value="phase 2 final" />
+    <option name="LAST_COMMIT_MESSAGE" value="phase 2 final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -801,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="510">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding />
         </state>
       </provider>
