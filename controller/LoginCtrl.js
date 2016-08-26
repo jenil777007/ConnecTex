@@ -7,11 +7,10 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
     $scope.user = {};
     $scope.OnLogin = function() {
 
-        console.log("clicked student");
         console.log($scope.user);
         
-        var u1 = $scope.user.username;
-        var p1 = $scope.user.password;
+        var u1 = $scope.user.Username;
+        var p1 = $scope.user.Password;
         console.log(u1);
         console.log(p1);
 
@@ -21,22 +20,19 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
          } else {
 
              $http({
-                 method: 'post',
-                 url: 'PHP/Login.php',
+                 method: 'POST',
+                 url: 'http://www.ctex.16mb.com/Login.php',
                  data: $scope.user,
                  headers: {'Content-Type': 'application/x-www-form-unlencoded'}
                  })
                  .success(function (data) {
+
                  if (data.success) {
                      $scope.message = data.message;
                      console.log(data.message);
-                     var type = data.type;
-                     console.log(data);
-                     
                  } else {
                      $scope.message = data.message;
                      console.log($scope.message);
-                     //alert(data.message);
                      }
                  })
                  .error(function (data) {

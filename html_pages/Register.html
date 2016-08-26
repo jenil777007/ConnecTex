@@ -63,7 +63,7 @@
 
         <md-input-container class="md-block input2" flex-gt-sm>
             <label>Enter Email</label>
-            <input ng-model="user.email" type="email" required>
+            <input ng-model="user.email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
         </md-input-container>
 
         <md-input-container class="md-block input2" flex-gt-sm>
@@ -78,7 +78,7 @@
 
 
 
-        <md-radio-group ng-model="user.type" class="radiobutton">
+        <md-radio-group ng-model="user.type" class="radiobutton" required>
             <label>Register As:</label>
             <md-radio-button value="Apple" class="md-primary">Weaver</md-radio-button>
             <md-radio-button value="Banana" class="md-primary">Wholesaler</md-radio-button>

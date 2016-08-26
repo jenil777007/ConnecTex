@@ -1,4 +1,7 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+header('Access-Control-Allow-Methods: GET, POST, PUT');
 
 class connection{
         var $host = "mysql.hostinger.in";
@@ -14,7 +17,7 @@ function connect(){
                 die("Cound not connect to database!!");
             }else{
                 $this->mycon = $con;
-               // echo "Successfully Connected";
+               //echo "Successfully Connected";
             }
 
             return $this->mycon;
