@@ -32,11 +32,11 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 
           if($sql>0){
             $response["success"] = true;
-            $response["message"] = "successfully Login.";
+            $response["message"] = "successfully LogedIn";
             die(json_encode($response));
           }else{
               $response["success"] = false;
-              $response["message"] = "Something Wrong.";
+              $response["message"] = "Username Or Password Wrong";
               die(json_encode($response));
 
           }

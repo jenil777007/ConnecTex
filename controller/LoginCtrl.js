@@ -1,10 +1,35 @@
 var app = angular.module('myapp');
 
-app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",function ($scope,$http,$location,$timeout,$mdDialog) {
+app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog","$mdToast",function ($scope,$http,$location,$timeout,$mdDialog,$mdToast) {
 
     $scope.isloaded = false;
     console.log("welocme");
     $scope.user = {};
+
+    var last = {
+        bottom: false,
+        top: true,
+        left: false,
+        right: true
+    };
+    $scope.toastPosition = angular.extend({},last);
+    $scope.getToastPosition = function() {
+        sanitizePosition();
+        return Object.keys($scope.toastPosition)
+            .filter(function(pos) { return $scope.toastPosition[pos]; })
+            .join(' ');
+    };
+    function sanitizePosition() {
+        var current = $scope.toastPosition;
+        if ( current.bottom && last.top ) current.top = false;
+        if ( current.top && last.bottom ) current.bottom = false;
+        if ( current.right && last.left ) current.left = false;
+        if ( current.left && last.right ) current.right = false;
+        last = angular.extend({},current);
+    }
+
+
+
     $scope.OnLogin = function() {
 
         console.log($scope.user);
@@ -14,6 +39,16 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
         console.log(u1);
         console.log(p1);
 
+            var toast = function(abc){
+                var pinTo = $scope.getToastPosition();
+                $mdToast.show(
+                    $mdToast.simple()
+                        .content(abc)
+                        .position(pinTo )
+                        .hideDelay(2000)
+                );
+
+            };
           if (u1 == null || p1 == null )  {
              console.log("empty");
              $scope.message = "One Or More Field Empty!!!";
@@ -30,9 +65,12 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
                  if (data.success) {
                      $scope.message = data.message;
                      console.log(data.message);
+                     toast($scope.message);
+
                  } else {
                      $scope.message = data.message;
                      console.log($scope.message);
+                     toast($scope.message);
                      }
                  })
                  .error(function (data) {

@@ -4,6 +4,7 @@ app.controller("NextCtrl",["$scope","$http","$location","$mdDialog",function ($s
 
     console.log("welocme");
     $scope.user = {};
+
    
    
 

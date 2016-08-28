@@ -5,8 +5,11 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog",function
     console.log("welocme");
     $scope.user = {};
     $scope.OnRegister= function() {
+        console.log($scope.user);
         $location.path('/Next');
     }
+    
+    
 
    
 }]);
