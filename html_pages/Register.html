@@ -67,52 +67,85 @@
             width: 50%;
             margin-bottom: -5%;
         }
+        .div5{
+
+            background-color: white;
+            margin-top: 4%;
+            margin-left: 36%;
+            margin-bottom: 1%;
+            width:30%;
+            height: 60%;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body class="autoheight">
-<form name="Form2" ng-submit="OnRegister()">
+<form name="Form2" novalidate>
 
     <img src="img/logo.png" class="card-image">
 
-    <div class="div1">
+    <div class="div1"  ng-show="myvar">
 
-    <div class="div2">
-        <md-input-container class="md-block input1" flex-gt-sm>
-            <label>Your First Name</label>
-            <input ng-model="user.fname" pattern="[a-z]" required >
-        </md-input-container>
+        <div class="div2">
+            <md-input-container class="md-block input1" flex-gt-sm>
+                <label>Your First Name</label>
+                <input ng-model="user.fname" pattern="[a-z]+" required >
+            </md-input-container>
+        </div>
+        <div class="div3">
+            <md-input-container class="md-block input3" flex-gt-sm>
+                <label>Your Last Name</label>
+                <input ng-model="user.lname" pattern="[a-z]+" required >
+            </md-input-container>
+        </div>
+
+            <md-input-container class="md-block input2" flex-gt-sm>
+                <label>Enter Email</label>
+                <input ng-model="user.email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            </md-input-container>
+
+            <md-input-container class="md-block input2" flex-gt-sm>
+                <label>Password</label>
+                <input ng-model="user.password" type="password" required>
+            </md-input-container>
+
+            <md-input-container class="md-block input2" flex-gt-sm>
+                <label>Retype Password</label>
+                <input ng-model="user.cpassword" type="password" required>
+            </md-input-container>
+
+
+
+            <md-radio-group ng-model="user.type" class="radiobutton" required>
+                <label>Register As:</label>
+                <md-radio-button value="1" class="md-primary">Weaver</md-radio-button>
+                <md-radio-button value="2"   class="md-primary">Wholesaler</md-radio-button>
+            </md-radio-group>
+
+            <center> <md-button class="md-raised" ng-click="OnNext()" id="button">Next</md-button></center>
     </div>
-    <div class="div3">
-        <md-input-container class="md-block input3" flex-gt-sm>
-            <label>Your Last Name</label>
-            <input ng-model="user.lname" pattern="[a-z]" required >
-        </md-input-container>
-    </div>
 
+    <div ng-show="!myvar" class="div5">
         <md-input-container class="md-block input2" flex-gt-sm>
-            <label>Enter Email</label>
-            <input ng-model="user.email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            <label>Your Company Name</label>
+            <input ng-model="user1.company_name" required>
         </md-input-container>
 
         <md-input-container class="md-block input2" flex-gt-sm>
-            <label>Password</label>
-            <input ng-model="user.password" type="password" required>
+            <label>Your Address1</label>
+            <input ng-model="user1.address1" type="text" required>
         </md-input-container>
 
         <md-input-container class="md-block input2" flex-gt-sm>
-            <label>Retype Password</label>
-            <input ng-model="user.cpassword" type="password" required>
+            <label>Your Address2</label>
+            <input ng-model="user1.address2" type="text" required>
         </md-input-container>
 
+        <md-checkbox ng-model="terms" aria-label="Checkbox 1" class="checkbox" required>
+            <a href="#Terms&condition" >Terms And Conditions</a>
+        </md-checkbox>
 
-
-        <md-radio-group ng-model="user.type" class="radiobutton" required>
-            <label>Register As:</label>
-            <md-radio-button value="Weaver" class="md-primary">Weaver</md-radio-button>
-            <md-radio-button value="Wholesaler"   class="md-primary">Wholesaler</md-radio-button>
-        </md-radio-group>
-
-        <center> <md-button class="md-raised" id="button">Next</md-button></center>
+        <center> <md-button class="md-raised" ng-click="OnRegister()" id="button">Register</md-button></center>
     </div>
 
 </form>

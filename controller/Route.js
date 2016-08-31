@@ -12,7 +12,7 @@ app.config(function ($routeProvider) {
         })
         .when('/Next',{
             templateUrl : 'html_pages/Next.html',
-            controller: 'NextCtrl'
+            controller: 'RegisterCtrl'
         })
         .otherwise({
             redirectTo : '/'
