@@ -100,21 +100,28 @@
         </div>
 
             <md-input-container class="md-block input2" flex-gt-sm>
-                <label>Enter Email</label>
+                <label>Enter Your Email</label>
                 <input ng-model="user.email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                <md-tooltip md-direction="left">
+                    Please Enter Valid E-mail ID
+                </md-tooltip>
             </md-input-container>
 
             <md-input-container class="md-block input2" flex-gt-sm>
                 <label>Password</label>
                 <input ng-model="user.password" type="password" required>
+                <md-tooltip md-direction="left">
+                    We Advice You To Select Strong Password
+                </md-tooltip>
             </md-input-container>
 
             <md-input-container class="md-block input2" flex-gt-sm>
                 <label>Retype Password</label>
                 <input ng-model="user.cpassword" type="password" required>
+                <md-tooltip md-direction="left">
+                    Please Write Matching Password
+                </md-tooltip>
             </md-input-container>
-
-
 
             <md-radio-group ng-model="user.type" class="radiobutton" required>
                 <label>Register As:</label>
@@ -127,22 +134,31 @@
 
     <div ng-show="!myvar" class="div5">
         <md-input-container class="md-block input2" flex-gt-sm>
-            <label>Your Company Name</label>
+            <label>Your Company's Name</label>
             <input ng-model="user1.company_name" required>
         </md-input-container>
 
         <md-input-container class="md-block input2" flex-gt-sm>
-            <label>Your Address1</label>
+            <label>Your Primary Address</label>
             <input ng-model="user1.address1" type="text" required>
+            <md-tooltip md-direction="left">
+                Format: Residence Number, Street, Road, District, City- Pincode
+            </md-tooltip>
         </md-input-container>
 
         <md-input-container class="md-block input2" flex-gt-sm>
-            <label>Your Address2</label>
-            <input ng-model="user1.address2" type="text" required>
+            <label>Your Secondary Address</label>
+            <input ng-model="user1.address2" type="text">
         </md-input-container>
 
+        <center>
+        <md-button class="md-primary md-raised" ng-click="showAlert($event)" flex="100"  flex-gt-md="auto"  >
+            Terms & Conditions
+        </md-button><br><br>
+        </center>
+
         <md-checkbox ng-model="terms" aria-label="Checkbox 1" class="checkbox" required>
-            <a href="#Terms&condition" >Terms And Conditions</a>
+            I agree to the Terms & Conditions.
         </md-checkbox>
 
         <center> <md-button class="md-raised" ng-click="OnRegister()" id="button">Register</md-button></center>

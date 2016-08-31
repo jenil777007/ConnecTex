@@ -2,8 +2,24 @@ var app = angular.module('myapp');
 
 app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToast",function ($scope,$http,$location,$mdDialog,$mdToast) {
 
-    console.log("welocme");
+    console.log("welcome");
     $scope.user = {};
+
+        $scope.status = '';
+        $scope.items = [1, 2, 3, 4, 5];
+        $scope.showAlert = function (ev) {
+            $mdDialog.show(
+                $mdDialog.alert()
+                    .parent(angular.element(document.querySelector('#dialogContainer')))
+                    .clickOutsideToClose(true)
+                    .title('TutorialsPoint.com')
+                    .textContent('Welcome to TutorialsPoint.com')
+                    .ariaLabel('Welcome to TutorialsPoint.com')
+                    .ok('Ok!')
+                    .targetEvent(ev)
+            );
+        };
+    
 
     $scope.myvar = true;
     $scope.OnNext= function() {
@@ -75,7 +91,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
                 alert("error");
             });
     }
-    
 
-   
+
+
 }]);
