@@ -34,13 +34,11 @@
         .input1{
             margin-left: 3.5%;
             width:93%;
-            padding-top: 3%;
+           // padding-top: 2%;
+            margin-top: 50px;
+
         }
-        .input2{
-            margin-left: 3.5%;
-            width:93%;
-            margin-top: -4%;
-        }
+
         .md-raised{
             margin-left: 3%;
             width:93%;
@@ -55,29 +53,26 @@
             margin-top: 1%;
 
         }
-        .edgePadding {
-            padding-left: 25px;
-            padding-right: 25px;
-        }
+
     </style>
 </head>
 <body >
-    <form name="Form1" ng-submit="OnLogin()" ng-show="isloaded">
+    <form name="Form1" ng-show="isloaded">
 
         <img src="img/logo.png" class="bounce card-image">
 
-        <div class="div1">
-            <md-input-container class="md-block input1" flex-gt-sm>
+        <div class="div1"><br>
+            <md-input-container class="md-block input1">
                 <label>Email Or Mobile No</label>
-                <input ng-model="user.Username" required>
+                <input ng-model="user.Username">
             </md-input-container>
 
-            <md-input-container class="md-block input2" flex-gt-sm>
+            <md-input-container class="md-block  ">
                 <label>Password</label>
-                <input ng-model="user.Password" type="password" required>
+                <input ng-model="user.Password" type="password">
             </md-input-container>
 
-            <center> <md-button class="md-raised" id="button">Login</md-button></center>
+            <center> <md-button class="md-raised" id="button" ng-click="OnLogin()">Login</md-button></center>
         </div>
 
         <div class="fpass">

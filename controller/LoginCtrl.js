@@ -5,7 +5,8 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
     $scope.isloaded = false;
     console.log("welocme");
     $scope.user = {};
-
+    $scope.user.Username = "";
+    $scope.user.Password = "abc@a.com";
     var last = {
         bottom: false,
         top: true,
@@ -28,12 +29,12 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
         last = angular.extend({},current);
     }
 
-
+    
 
     $scope.OnLogin = function() {
 
         console.log($scope.user);
-        
+
         var u1 = $scope.user.Username;
         var p1 = $scope.user.Password;
         console.log(u1);
@@ -66,7 +67,7 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
                      $scope.message = data.message;
                      console.log(data.message);
                      toast($scope.message);
-
+                     $location.path('/Dashboard');
                  } else {
                      $scope.message = data.message;
                      console.log($scope.message);
