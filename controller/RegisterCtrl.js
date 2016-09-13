@@ -21,12 +21,17 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
         };
     
 
-    $scope.myvar = true;
+    $scope.myvar = 1;
     $scope.OnNext= function() {
         console.log($scope.user);
-        $scope.user.name=$scope.user.fname +" "+ $scope.user.lname;
-        $scope.myvar = !$scope.myvar;
-        console.log($scope.myvar);
+       // var fn = $scope.user.fname;
+        //console.log(fn);
+
+            $scope.user.name = $scope.user.fname + " " + $scope.user.lname;
+            $scope.myvar = 2;
+            console.log("success");
+
+
     };
 
     var last = {
@@ -63,12 +68,53 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
     };
 
     $scope.OnRegister= function() {
-        var final = angular.merge($scope.user,$scope.user1);
-        console.log(final);
 
-       
+        $scope.myvar = 3;
+        $scope.final1 = angular.merge($scope.user,$scope.user1);
+        console.log($scope.final1);
+    }
 
+    $scope.Onotp= function() {
+        $scope.myvar = 4;
+        console.log($scope.user2);
+
+        var final2 = $scope.user2;
+        console.log(final2);
+        
+        $scope.final3 = angular.merge($scope.final1,final2);
+        console.log($scope.final3);
+        
         $http({
+            method: 'POST',
+            url: 'http://www.ctex.16mb.com/SendOtp.php',
+            data: final2,
+            headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+        })
+            .success(function (data) {
+
+                if (data.success) {
+                    $scope.message = data.message;
+                    console.log(data.message);
+                    //toast($scope.message);
+
+                } else {
+                    $scope.message = data.message;
+                    console.log($scope.message);
+                    toast($scope.message);
+                }
+            })
+            .error(function (data) {
+                alert("error");
+            });
+    }
+
+    $scope.Onconfirm= function() {
+        console.log($scope.user3);
+        
+        var final = angular.merge($scope.final3,$scope.user3);
+        console.log(final);
+       
+       /* $http({
             method: 'POST',
             url: 'http://www.ctex.16mb.com/Register.php',
             data: final,
@@ -90,8 +136,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
             .error(function (data) {
                 alert("error");
             });
+       */
     }
 
-
-
-}]);
+    }]);

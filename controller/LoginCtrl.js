@@ -5,7 +5,7 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
     $scope.isloaded = false;
     console.log("welocme");
     $scope.user = {};
-    $scope.user.Username = "";
+    $scope.user.Username = "abc@a,com";
     $scope.user.Password = "abc@a.com";
     var last = {
         bottom: false,

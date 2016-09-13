@@ -7,12 +7,10 @@
         }
 
         .div1{
-
-            margin:auto;position:absolute;top: 40px;left: 0;bottom: 0;right: 0;
             background-color: transparent;
-        // margin-top: 5%;
-        // margin-left: 37%;
-        // margin-bottom: 1%;
+            margin-top: 5%;
+            margin-left: 37%;
+            margin-bottom: 1%;
             width:25%;
             height: 60%;
             border-radius: 5px;
@@ -25,20 +23,24 @@
             margin-top: 1%;
         }
 
-      /*  .input1{
-            margin-left: 3.5%;
-            position: relative;
+        .input1{
+            margin-left: 2%;
+            margin-top: -1%;
+            width:95%;
+            margin-bottom: 0%;
         }
 
         .input2{
-            margin-left: 3.5%;
-            width: 93%;
-            margin-top: -5%;
+            width: 95%;
+            margin-left: 2%;
+            margin-bottom: -5%;
         }
+
         .input3{
-            margin-right: 3.5%;
+            margin-left: 3.5%;
+            width: 90%;
             position: relative;
-        }*/
+        }
 
         .radiobutton{
             margin-left: 3.5%;
@@ -71,103 +73,126 @@
         .div5{
             margin:auto;position:fixed;top: 70px;left: 0;bottom: 0;right: 0;z-index: 100;
             background-color: transparent;
-           // margin-top: 4%;
-          //  margin-left: 36%;
-           // margin-bottom: 1%;
+            margin-top: 4%;
+            margin-left: 36%;
+            margin-bottom: 1%;
             width:30%;
             height: 60%;
             border-radius: 5px;
         }
+        .div6{
+
+            background-color: transparent;
+            margin-top: 4%;
+            margin-left: 36%;
+            margin-bottom: 1%;
+            width:30%;
+            height: 60%;
+            border-radius: 5px;
+
+        }
     </style>
 </head>
 <body>
-<div style="height: 85 %;">
+<div style="height: 50%;">
     <div style="top: 0;right: 0;bottom: 0;left: 0;overflow:hidden;z-index: -100;">
         <video autoplay loop >
             <source src="Busy/MP4/Busy.mp4" type="video/mp4" alt="Busy/Snapshots/Busy.jpg"/>Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
     </div>
 
-    <div style="margin:auto;position:fixed;top: 70px;left: 0;bottom: 0;right: 0;z-index: 100;">
+    <div style="margin:auto;position:fixed;top: 40px;left: 0;bottom: 0;right: 0;z-index: 100;">
         <form name="Form2" novalidate>
 
             <img src="img/logo.png" class="card-image">
 
-            <div style="margin-top: 5%;" class="div1"  ng-show="myvar">
+            <div class="div1"  ng-show="myvar==1">
 
                 <div class="div2">
-                    <md-input-container class="md-block" flex-gt-sm>
+                    <md-input-container class="input3" flex-gt-sm>
                         <label style="color: aliceblue">Your First Name</label>
-                        <input ng-model="user.fname" pattern="[a-z]+" required >
+                        <input ng-model="user.fname" pattern="[a-z]+" type="text" required >
                     </md-input-container>
                 </div>
                 <div class="div3">
-                    <md-input-container class="md-block" flex-gt-sm>
+                    <md-input-container class="input3" flex-gt-sm>
                         <label style="color: aliceblue">Your Last Name</label>
-                        <input ng-model="user.lname" pattern="[a-z]+" required >
+                        <input ng-model="user.lname" pattern="[a-z]+" type="text" required >
                     </md-input-container>
                 </div>
-                <div>
-                    <md-input-container style="margin-bottom: inherit;" flex-gt-sm>
+
+                    <md-input-container class="input1">
                         <label style="color: aliceblue">Enter Your Email</label>
                         <input ng-model="user.email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
-                        <md-tooltip md-direction="left">
-                            Please Enter Valid E-mail ID
-                        </md-tooltip>
                     </md-input-container>
 
-                    <md-input-container style="margin-bottom: inherit;" class="md-block" flex-gt-sm>
+                    <md-input-container class="input1">
                         <label style="color: aliceblue">Password</label>
                         <input ng-model="user.password" type="password" required>
-                        <md-tooltip md-direction="left">
-                            We Advice You To Select Strong Password
-                        </md-tooltip>
                     </md-input-container>
 
-                    <md-input-container style="margin-bottom: inherit;" class="md-block" flex-gt-sm>
+                    <md-input-container class="input1">
                         <label style="color: aliceblue">Retype Password</label>
                         <input ng-model="user.cpassword" type="password" required>
-                        <md-tooltip md-direction="left">
-                            Please Write Matching Password
-                        </md-tooltip>
                     </md-input-container>
 
-                    <md-radio-group style="margin-bottom: inherit;" ng-model="user.type" class="radiobutton" required>
+                    <md-radio-group ng-model="user.type" class="radiobutton" required>
                         <label style="color: aliceblue">Register as a:</label><br><br>
-                        <md-radio-button value="1" style="color: aliceblue" class="md-primary">Weaver</md-radio-button>
-                        <md-radio-button value="2"  style="color: aliceblue" class="md-primary">Wholesaler</md-radio-button>
+                        <md-radio-button value="1" style="color: aliceblue;margin-left: 3.5%" class="md-primary">Weaver</md-radio-button>
+                        <md-radio-button value="2"  style="color: aliceblue;margin-left: 3.5%"" class="md-primary">Wholesaler</md-radio-button>
                     </md-radio-group>
 
-                    <center> <md-button style="margin-top: 5%;" class="md-raised" ng-click="OnNext()" id="button">Next</md-button></center>
-                </div>
-            </div>
+                    <md-checkbox style="margin-left: 3.5%">
+                        Newsletter
+                    </md-checkbox>
 
-            <div ng-show="!myvar" class="div5">
-                <md-input-container class="md-block input2" flex-gt-sm>
+                    <center> <md-button type="submit" class="md-raised" ng-click="Form2.$valid && OnNext()" id="button">Next</md-button></center>
+
+            </div>
+        </form>
+        <form name="Form3">
+            <div ng-show="myvar==2" class="div5">
+                <md-input-container class="input2">
                     <label style="color: aliceblue" >Your Company's Name</label>
                     <input ng-model="user1.company_name" required>
                 </md-input-container>
 
-                <md-input-container class="md-block input2" flex-gt-sm>
+                <md-input-container class="input2">
                     <label style="color: aliceblue" >Your Primary Address</label>
                     <input ng-model="user1.address1" type="text" required>
-                    <md-tooltip md-direction="left">
-                        Format: Residence Number, Street, Road, District, City- Pincode
-                    </md-tooltip>
                 </md-input-container>
 
-                <md-input-container class="md-block input2" flex-gt-sm>
+                <md-input-container class="input2">
                     <label style="color: aliceblue" >Your Secondary Address</label>
                     <input ng-model="user1.address2" type="text">
                 </md-input-container>
 
                 <md-checkbox style="color: aliceblue" ng-model="terms" class="checkbox" required>
                     <a ng-click="showAlert($event)"><u>I agree to the Terms & Conditions</u></a>
-                </md-checkbox>
+                </md-checkbox>``
 
-                <center> <md-button class="md-raised" ng-click="OnRegister()" id="button">Register</md-button></center>
+                <center> <md-button type="submit" class="md-raised" ng-click="Form3.$valid && OnRegister()" id="button">Register</md-button></center>
             </div>
+        </form>
+        <form name="Form4">
+            <div class="div6" ng-show="myvar==3">
+                <md-input-container class="input2">
+                    <label style="color: aliceblue" >Enter Your Mobile No</label>
+                    <input ng-model="user2.mobile" type="number" required>
+                </md-input-container>
 
+                <center> <md-button type="submit" class="md-raised" ng-click="Form4.$valid && Onotp()" id="button">Register</md-button></center>
+            </div>
+        </form>
+        <form name="Form5">
+            <div class="div6" ng-show="myvar==4">
+                <md-input-container class="input2">
+                    <label>Enter Otp</label>
+                    <input ng-model="user3.otp" type="number" required>
+                </md-input-container>
+
+                <center> <md-button type="submit" class="md-raised" ng-click="Form5.$valid && Onconfirm()" id="button">Register</md-button></center>
+            </div>
         </form>
     </div>
 </div>
