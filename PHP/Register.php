@@ -27,7 +27,7 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 
 
 
-      if (empty($post['name']) || empty($post['password']) || empty($post['cpassword']) || empty($post['email']) || empty($post['company_name']) || empty($post['address1']) || empty($post['address2'] || empty($post['type'] || empty($post['mobile'] || empty($post['otp'] || empty($post['newsletter']))
+      if (empty($post['name']) || empty($post['password']) || empty($post['cpassword']) || empty($post['email']) || empty($post['company_name']) || empty($post['address1']) || empty($post['address2']) || empty($post['type']) || empty($post['mobile']) || empty($post['otp']) || empty($post['newsletter']))
       {
               $response["success"] = false;
               $response["message"] = "One or both of the fields are empty.";

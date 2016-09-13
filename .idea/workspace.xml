@@ -4,8 +4,7 @@
     <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Register.php" afterPath="$PROJECT_DIR$/PHP/Register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/RegisterCtrl.js" afterPath="$PROJECT_DIR$/controller/RegisterCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Register.html" afterPath="$PROJECT_DIR$/html_pages/Register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/LoginCtrl.js" afterPath="$PROJECT_DIR$/controller/LoginCtrl.js" />
     </list>
     <ignored path="ConnecTex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
@@ -67,18 +66,28 @@
       <file leaf-file-name="RegisterCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/RegisterCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="85">
               <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Register.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/Register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="334">
+              <caret line="29" column="273" selection-start-line="29" selection-start-column="273" selection-end-line="29" selection-end-column="273" />
               <folding />
             </state>
           </provider>
@@ -121,13 +130,13 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/MembersArea.html" />
-        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/Login.html" />
         <option value="$PROJECT_DIR$/controller/Route.js" />
         <option value="$PROJECT_DIR$/html_pages/extra.html" />
         <option value="$PROJECT_DIR$/html_pages/Register.html" />
         <option value="$PROJECT_DIR$/controller/RegisterCtrl.js" />
         <option value="$PROJECT_DIR$/PHP/Register.php" />
+        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
       </list>
     </option>
   </component>
@@ -377,7 +386,7 @@
       <workItem from="1473696730320" duration="1983000" />
       <workItem from="1473757140539" duration="12000" />
       <workItem from="1473757769012" duration="3856000" />
-      <workItem from="1473776201175" duration="2027000" />
+      <workItem from="1473776201175" duration="2485000" />
     </task>
     <task id="LOCAL-00001" summary="Added Title">
       <created>1470232391017</created>
@@ -512,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473761739473</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="last 1">
+      <created>1473778571660</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1473778571660</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100335000" />
+    <option name="totallyTimeSpent" value="100793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -563,7 +579,8 @@
     <MESSAGE value="login success 2" />
     <MESSAGE value="Boot loader : Orange&#10;Added: Member's Area | Register.html&#10;Added: Alert for Terms &amp; Conditions , but still left" />
     <MESSAGE value="last" />
-    <option name="LAST_COMMIT_MESSAGE" value="last" />
+    <MESSAGE value="last 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="last 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -798,26 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-856">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/extra.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="205" column="23" selection-start-line="205" selection-start-column="23" selection-end-line="205" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -848,18 +849,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="29" column="273" selection-start-line="29" selection-start-column="273" selection-end-line="29" selection-end-column="273" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/RegisterCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="85">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Register.php">
+    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="34">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding />
         </state>
       </provider>
