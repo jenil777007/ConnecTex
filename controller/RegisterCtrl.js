@@ -12,10 +12,10 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
                 $mdDialog.alert()
                     .parent(angular.element(document.querySelector('#dialogContainer')))
                     .clickOutsideToClose(true)
-                    .title('TutorialsPoint.com')
+                    .title('Terms & Conditions')
                     .textContent('Welcome to TutorialsPoint.com')
-                    .ariaLabel('Welcome to TutorialsPoint.com')
-                    .ok('Ok!')
+                    .ariaLabel('ConnecTex Inc.')
+                    .ok('I agree.')
                     .targetEvent(ev)
             );
         };

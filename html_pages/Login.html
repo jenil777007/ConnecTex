@@ -1,7 +1,6 @@
 <head>
     <style>
 
-
         #button{
             color: white;
 
@@ -12,15 +11,15 @@
 
         body{
             font-family: 'Slabo 27px', serif;
-            background-color: #f2f2f2;
+            //background-color: #f2f2f2;
 
         }
         .div1{
-
-            background-color: white;
-            margin-top: 5%;
-            margin-left: 37%;
-            margin-bottom: 1%;
+            margin:auto;position:absolute;top: 40px;left: 0;bottom: 0;right: 0;
+            background-color: transparent;
+           // margin-top: 5%;
+           // margin-left: 37%;
+           // margin-bottom: 1%;
             width:25%;
             height: 60%;
             border-radius: 5px;
@@ -47,43 +46,51 @@
 
         .fpass{
         //margin-top: 15%;
-            margin-left: 45%;
+         //   margin-left: 45%;
+            margin:auto;position:absolute;top: 0;left: 0;bottom: 0;right: 0;
         }
         .nreg{
-            margin-top: 1%;
-
+          //  margin-top: 1%;
+            margin:auto;position:absolute;top: 0;left: 0;bottom: 0;right: 0;
         }
 
     </style>
 </head>
 <body >
-    <form name="Form1" ng-show="isloaded">
+<div>
 
-        <img src="img/logo.png" class="bounce card-image">
+        <div style="top: 0;right: 0;bottom: 0;left: 0;overflow:hidden;z-index: -100;">
+            <video autoplay loop >
+                <source src="Busy/MP4/Busy.mp4" type="video/mp4" alt="Busy/Snapshots/Busy.jpg"/>Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+        </div>
+
+    <div style="margin:auto;position:fixed;top: 70px;left: 0;bottom: 0;right: 0;z-index: 100;">
+        <form name="Form1" ng-show="isloaded">
+
+        <img src="img/logo.png" class="card-image">
 
         <div class="div1"><br>
-            <md-input-container class="md-block input1">
-                <label>Email Or Mobile No</label>
-                <input ng-model="user.Username">
+            <md-input-container class="md-block">
+                <label style="color: aliceblue">Email Or Mobile No</label>
+                <input ng-model="user.Username" type="text">
             </md-input-container>
 
             <md-input-container class="md-block  ">
-                <label>Password</label>
-                <input ng-model="user.Password" type="password">
+                <label style="color: aliceblue">Password</label>
+                <input ng-model="user.Password" type="password" value="">
             </md-input-container>
 
-            <center> <md-button class="md-raised" id="button" ng-click="OnLogin()">Login</md-button></center>
+            <center> <md-button class="md-raised" id="button" ng-click="OnLogin()">Login</md-button><br><br>
+
+            <a href="abc" style="color: ghostwhite">Forgot Password?</a><br><br>
+            <label style="color: ghostwhite">Not Registered Yet??</label>
+            <a href="#Register" style="color: aliceblue">Sign Up Here</a>
+            </center>
         </div>
+        </form>
+    </div>
 
-        <div class="fpass">
-            <a href="abc" style="color: #2E3E4B">Forgot Password?</a>
-        </div>
 
-        <center><div class="nreg">
-            <label>Not Register Yet??</label>
-            <a href="#Register" style="color: #2E3E4B">Sign Up</a>
-        </div></center>
-       
-
-    </form>
+</div>
 </body>
