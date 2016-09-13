@@ -21,17 +21,20 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
   $address1=$post["address1"];
   $address2=$post["address2"];
   $type=$post["type"];
+  $mobile=$post["mobile"];
+  $otp=$post["otp"];
+  $newsletter=$post["newsletter"];
 
 
 
-      if (empty($post['name']) || empty($post['password']) || empty($post['cpassword']) || empty($post['email']) || empty($post['company_name']) || empty($post['address1']) || empty($post['address2']))
+      if (empty($post['name']) || empty($post['password']) || empty($post['cpassword']) || empty($post['email']) || empty($post['company_name']) || empty($post['address1']) || empty($post['address2'] || empty($post['type'] || empty($post['mobile'] || empty($post['otp'] || empty($post['newsletter']))
       {
               $response["success"] = false;
               $response["message"] = "One or both of the fields are empty.";
               die(json_encode($response));
       }else{
 
-           $query = "INSERT INTO `user`(`name`, `email`, `password`, `otp`, `expiry`, `role`, `status`, `featured`, `new`, `registered`, `newslatter`, `company_name`, `address1`, `address2`, `area`, `mobile`, `device_id`, `created_date`) VALUES ('$name','$email','$password','','',$type,'','','','','','$c_name','$address1','$address2','','','','')";
+           $query = "INSERT INTO `user`(`name`, `email`, `password`, `otp`, `expiry`, `role`, `status`, `featured`, `new`, `registered`, `newslatter`, `company_name`, `address1`, `address2`, `area`, `mobile`, `device_id`, `created_date`) VALUES ('$name','$email','$password','$otp','',$type,'','','','','$newsletter','$c_name','$address1','$address2','','$mobile','','')";
           //$query = "INSERT INTO user VALUES('$name','$email','$password','','',$type,'','','','','','$c_name','$address1','$address2','','','','')";
           $result = mysqli_query($connection->mycon,$query);
 

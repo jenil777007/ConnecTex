@@ -8,7 +8,7 @@
 
         .div1{
             background-color: transparent;
-            margin-top: 5%;
+            margin-top: 2%;
             margin-left: 37%;
             margin-bottom: 1%;
             width:25%;
@@ -142,7 +142,7 @@
                         <md-radio-button value="2"  style="color: aliceblue;margin-left: 3.5%"" class="md-primary">Wholesaler</md-radio-button>
                     </md-radio-group>
 
-                    <md-checkbox style="margin-left: 3.5%">
+                    <md-checkbox style="margin-left: 3.5%" ng-model="user.newsletter" ng-true-value="1" ng-false-value="0">
                         Newsletter
                     </md-checkbox>
 
@@ -150,7 +150,7 @@
 
             </div>
         </form>
-        <form name="Form3">
+        <form name="Form3" novalidate>
             <div ng-show="myvar==2" class="div5">
                 <md-input-container class="input2">
                     <label style="color: aliceblue" >Your Company's Name</label>
@@ -174,7 +174,7 @@
                 <center> <md-button type="submit" class="md-raised" ng-click="Form3.$valid && OnRegister()" id="button">Register</md-button></center>
             </div>
         </form>
-        <form name="Form4">
+        <form name="Form4" novalidate>
             <div class="div6" ng-show="myvar==3">
                 <md-input-container class="input2">
                     <label style="color: aliceblue" >Enter Your Mobile No</label>
@@ -184,7 +184,7 @@
                 <center> <md-button type="submit" class="md-raised" ng-click="Form4.$valid && Onotp()" id="button">Register</md-button></center>
             </div>
         </form>
-        <form name="Form5">
+        <form name="Form5" novalidate>
             <div class="div6" ng-show="myvar==4">
                 <md-input-container class="input2">
                     <label>Enter Otp</label>

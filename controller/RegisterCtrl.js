@@ -3,8 +3,9 @@ var app = angular.module('myapp');
 app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToast",function ($scope,$http,$location,$mdDialog,$mdToast) {
 
     console.log("welcome");
+   
     $scope.user = {};
-
+    $scope.user.newsletter = 0;
         $scope.status = '';
         $scope.items = [1, 2, 3, 4, 5];
         $scope.showAlert = function (ev) {
@@ -114,7 +115,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
         var final = angular.merge($scope.final3,$scope.user3);
         console.log(final);
        
-       /* $http({
+       $http({
             method: 'POST',
             url: 'http://www.ctex.16mb.com/Register.php',
             data: final,
@@ -136,7 +137,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
             .error(function (data) {
                 alert("error");
             });
-       */
+       
     }
 
     }]);
