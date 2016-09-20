@@ -5,12 +5,8 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 
   include_once './Config.php';
 
-
-
   $connection = new connection();
   $connection->connect();
-
-
 
   $post = json_decode(file_get_contents("php://input"), true);
   $name=$post["name"];
