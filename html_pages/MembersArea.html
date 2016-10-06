@@ -1,12 +1,10 @@
 <head>
     <style>
         .div1{
-            background-color: #E66C54;
-            height: 25%;
-            width: 100%;
+
         }
         .div2{
-            margin-top: 4.5%;
+            margin-top: 3.8%;
             height: 90%;
         }
 
@@ -16,12 +14,35 @@
             width: 30%;
         }
 
+        .card1{
+            max-height: 150%;
+        }
+        .card2{
+            margin-left: 5%;
+            width: 150%;
+            max-height: 150%;
+        }
+        .card3{
+            margin-left: 5%;
+            width: 150%;
+            max-height: 150%;
+        }
+        #vertical-container {
+            height: 292px;
+            width: 100%;
+            max-width: 400px; }
+
+        .repeated-item {
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            height: 40px;
+            padding-top: 10px; }
+        .md-virtual-repeat-offsetter div {
+            padding-left: 16px; }
     </style>
 </head>
-<div class="div1">
-    <label ng-click="toggleLeft()" style="margin: 1%"> <img src="img/menu2.png" ></label>
-    <h3>ConnecTex</h3>
-
+<div style="background-color: #E66C54; height: 25%; width: 100%;">
+    <img src="img/menu2.png" ng-click="toggleLeft()">
 </div>
 
 <div>
@@ -30,8 +51,8 @@
 
         <md-sidenav class="div2" md-component-id="left" md-disable-backdrop md-whiteframe="4">
 
-            <md-toolbar class="md-theme-indigo">
-                <h1 class="md-toolbar-tools">Disabled Backdrop</h1>
+            <md-toolbar class="md-theme-indigo" style="background-color: #E66C54 ">
+                <h1 class="md-toolbar-tools">Profile</h1>
             </md-toolbar>
 
             <md-content layout-margin>
@@ -42,20 +63,38 @@
 
         </md-sidenav>
 
-        <md-content flex layout-padding>
+        <md-content >
 
-            <div layout="column" layout-align="top center">
-                <p>
-                    Developers can also disable the backdrop of the sidenav.<br/>
-                    This will disable the functionality to click outside to close the sidenav.
-                </p>
-
-
-
-            </div>
-            <div class="div3"></div>
         </md-content>
 
     </section>
 
+</div>
+
+
+<div style="overflow: scroll; background-color: aquamarine; height: 300px; width: 150px">
+    <p ng-repeat="i in item">
+    {{i}}
+        </p>
+</div>
+<div layout="row" style="margin-top: 2%" >
+
+    <md-content layout="row" style="height: 500%; width: 100%;">
+        <md-card style="height: 250%; width: 30%;">
+            <md-card-content>
+                <p>hello</p>
+            </md-card-content>
+        </md-card>
+        <md-card style="height: 250%; width: 30%;">
+            <md-card-content>
+                <p>hello1</p>
+            </md-card-content>
+        </md-card>
+        <md-card style="height: 250%; width: 30%;">
+            <md-card-content>
+                <p>hello2</p>
+            </md-card-content>
+        </md-card>
+    </md-content>
+</div>
 </div>

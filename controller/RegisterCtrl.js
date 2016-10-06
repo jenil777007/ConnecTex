@@ -127,6 +127,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
                     $scope.message = data.message;
                     console.log(data.message);
                     toast($scope.message);
+                    $location.path('/Dashboard');
 
                 } else {
                     $scope.message = data.message;

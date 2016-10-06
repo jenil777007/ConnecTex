@@ -9,4 +9,6 @@ app.controller('MembersAreaCtrl', function ($scope, $timeout, $mdSidenav) {
             $mdSidenav(componentId).toggle();
         }
     }
+
+    $scope.item = ['ahgdhg','bdsacvsaa','cdsvasdvcds','dvdsavasdvsd','evdsvsavd','fsdvavsavds','h','g','j','y'];
 });
