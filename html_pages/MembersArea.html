@@ -4,8 +4,8 @@
 
         }
         .div2{
-            margin-top: 3.8%;
-            height: 90%;
+            margin-top: 1.9%;
+            height: 75%;
         }
 
         .div3{
@@ -41,8 +41,20 @@
             padding-left: 16px; }
     </style>
 </head>
+<div>
 <div style="background-color: #E66C54; height: 25%; width: 100%;">
-    <img src="img/menu2.png" ng-click="toggleLeft()">
+
+    <md-icon md-svg-src="img/micons/navigation/svg/production/ic_last_page_48px.svg" ng-click="toggleLeft()"
+             style="height: 10px;"></md-icon>
+    <label>CONNECTEX INC.</label>
+    <!--<img src="img/logo.png" ng-click="" style="width: 20%;height: 2% ;margin-left: 1.5%;">-->
+    <md-icon md-svg-src="img/micons/social/svg/production/ic_person_48px.svg" ng-click=""
+             style="float: right;margin-left: 1%;"></md-icon>
+    <md-icon md-svg-src="img/micons/social/svg/production/ic_notifications_48px.svg" ng-click=""
+             style="float: right;margin-left: 1%;"></md-icon>
+    <a href="" style="float: right;margin-left: 1%;">TRANSACTIONS</a>
+
+
 </div>
 
 <div>
@@ -50,17 +62,25 @@
     <section layout="row">
 
         <md-sidenav class="div2" md-component-id="left" md-disable-backdrop md-whiteframe="4">
-
+            <center>
             <md-toolbar class="md-theme-indigo" style="background-color: #E66C54 ">
                 <h1 class="md-toolbar-tools">Profile</h1>
             </md-toolbar>
 
             <md-content layout-margin>
-                <p>
-                    This sidenav is not showing any backdrop, where users can click on it, to close the sidenav.
-                </p>
+                <img src="" alt="Your pic here">
             </md-content>
+                <md-content layout-margin>
+                    <label>Name Here</label>
+                </md-content>
+                <md-content layout-margin>
+                    <label>Company Name Here</label>
+                </md-content>
+                <md-content layout-margin>
+                    <a href="">Status</a>
+                </md-content>
 
+            </center>
         </md-sidenav>
 
         <md-content >
