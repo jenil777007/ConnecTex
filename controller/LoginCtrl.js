@@ -65,12 +65,12 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
 
                  if (data.success) {
                      $scope.message = data.message;
-                     
+                     var id = data.id;
                      $cookieStore.put('uname', u1);
                      
                      console.log(data.message);
                      toast($scope.message);
-                     $location.path('/Dashboard');
+                     $location.path('/Dashboard/'+ id);
                  } else {
                      $scope.message = data.message;
                      console.log($scope.message);

@@ -1,0 +1,77 @@
+<html lang="en" >
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+    <style>
+
+         #vertical-container {
+            height: 292px;
+            width: 100%;
+            max-width: 400px; }
+
+        .repeated-item {
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            height: 40px;
+            padding-top: 10px; }
+
+         md-content {
+            margin: 16px; }
+
+        .md-virtual-repeat-container {
+            border: solid 1px grey; }
+
+         .md-virtual-repeat-offsetter div {
+            padding-left: 16px; }
+    </style>
+    <script>
+        (function () {
+            'use strict';
+
+            angular
+                    .module('virtualRepeatVerticalDemo', ['ngMaterial'])
+                    .controller('AppCtrl', function() {
+                        this.items = [];
+                        for (var i = 0; i < 1000; i++) {
+                            this.items.push(i);
+                        }
+                    });
+
+        })();
+    </script>
+</head>
+<body ng-app="virtualRepeatVerticalDemo">
+<div ng-controller="AppCtrl as ctrl" ng-cloak>
+    <md-content layout="column">
+        <p>
+            Display 1000 item in a virtual-list with viewport of only 7 rows (height=40px).
+            <br/><br/>
+            This demo shows scroll and rendering performance gains when using <code>md-virtual-repeat</code>;
+            achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to
+            explicitly use <code>md-virtual-repeat-container</code> as a wrapping parent container.
+        </p>
+
+        <md-virtual-repeat-container id="vertical-container">
+            <div md-virtual-repeat="item in ctrl.items"
+                 class="repeated-item" flex>
+                {{item}}
+            </div>
+        </md-virtual-repeat-container>
+    </md-content>
+
+</div>
+</body>
+</html>

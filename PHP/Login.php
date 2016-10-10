@@ -20,24 +20,31 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 
       if (empty($post['Username']) || empty($post['Password']))
       {
-              $response["success"] = false;
-              $response["message"] = "One or both of the fields are empty.";
-              die(json_encode($response));
+              $abc["success"] = false;
+              $abc["message"] = "One or both of the fields are empty.";
+              die(json_encode($abc));
       }else{
           $query = " SELECT * FROM user WHERE email ='$username'and password='$password'";
           $result = mysqli_query($connection->mycon,$query);
 
+
           $sql = mysqli_num_rows($result);
 
+            while($a = mysqli_fetch_assoc($result))
+            {
+                $abc = $a;
+            }
+           //echo json_encode($abc);
 
           if($sql>0){
-            $response["success"] = true;
-            $response["message"] = "successfully LogedIn";
-            die(json_encode($response));
+
+            $abc["success"] = true;
+            $abc["message"] = "successfully LogedIn";
+            die(json_encode($abc));
           }else{
-              $response["success"] = false;
-              $response["message"] = "Username Or Password Wrong";
-              die(json_encode($response));
+              $abc["success"] = false;
+              $abc["message"] = "Username Or Password Wrong";
+              die(json_encode($abc));
 
           }
       }
