@@ -1,4 +1,4 @@
-var app = angular.module("myapp",['ngRoute','ngMaterial','ngCookies','alexjoffroy.angular-loaders']);
+var app = angular.module("myapp",['ngRoute','ngMaterial','ngCookies']);
 
 app.config(function ($routeProvider) {
     $routeProvider
