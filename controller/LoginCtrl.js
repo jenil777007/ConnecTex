@@ -1,6 +1,6 @@
 var app = angular.module('myapp');
 
-app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog","$mdToast",function ($scope,$http,$location,$timeout,$mdDialog,$mdToast) {
+app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog","$mdToast","$cookieStore",function ($scope,$http,$location,$timeout,$mdDialog,$mdToast,$cookieStore) {
 
     $scope.isloaded = false;
     console.log("welocme");
@@ -65,6 +65,9 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
 
                  if (data.success) {
                      $scope.message = data.message;
+                     
+                     $cookieStore.put('uname', u1);
+                     
                      console.log(data.message);
                      toast($scope.message);
                      $location.path('/Dashboard');
@@ -77,8 +80,8 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
                  .error(function (data) {
                  alert("error");
              });
-         };
-    }
+          }
+    };
    $timeout(function () {
         $scope.isloaded = true;
     }, 2500);

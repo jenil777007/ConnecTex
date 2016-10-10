@@ -44,16 +44,13 @@
 <div>
 <div style="background-color: #E66C54; height: 25%; width: 100%;">
 
-    <md-icon md-svg-src="img/micons/navigation/svg/production/ic_last_page_48px.svg" ng-click="toggleLeft()"
-             style="height: 10px;"></md-icon>
+    <md-icon md-svg-src="img/micons/navigation/svg/production/ic_last_page_48px.svg" ng-click="toggleLeft()" style="height: 10px;" class="hvr-bounce-in"></md-icon>
     <img src="img/ctxlogo.png" ng-click="" style="width: 20px;height: 20px ;margin-left: 1.5%;margin-right: 1%">
     <label>CONNECTEX INC.</label>
 
-    <md-icon md-svg-src="img/micons/social/svg/production/ic_person_48px.svg" ng-click=""
-             style="float: right;margin-left: 1%;"></md-icon>
-    <md-icon md-svg-src="img/micons/social/svg/production/ic_notifications_48px.svg" ng-click=""
-             style="float: right;margin-left: 1%;"></md-icon>
-    <a href="" style="float: right;margin-left: 1%;">TRANSACTIONS</a>
+    <md-icon md-svg-src="img/micons/social/svg/production/ic_person_48px.svg" ng-click="onLogout()" style="float: right;margin-left: 1%;" class="hvr-bounce-in  "></md-icon>
+    <md-icon md-svg-src="img/micons/social/svg/production/ic_notifications_48px.svg" ng-click="" style="float: right;margin-left: 1%;" class="hvr-bounce-in"></md-icon>
+    <a href="" style="float: right;margin-left: 1%;" class="animated rotateIn">TRANSACTIONS</a>
 
 
 </div>
@@ -72,7 +69,7 @@
                 <img src="" alt="Your pic here">
             </md-content>
                 <md-content layout-margin>
-                    <label>Name Here</label>
+                    <label>{{userName}}</label>
                 </md-content>
                 <md-content layout-margin>
                     <label>Company Name Here</label>
@@ -98,7 +95,7 @@
     {{i}}
         </p>
 </div>
-<div layout="row" style="margin-top: 2%" >
+<div layout="row" style="margin-top: 2%" class="animated bounceInDown">
 
     <md-content layout="row" style="height: 500%; width: 100%;">
         <md-card style="height: 250%; width: 30%;">
