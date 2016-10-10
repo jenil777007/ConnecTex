@@ -1,11 +1,13 @@
 var app = angular.module('myapp');
 
-app.controller('MembersAreaCtrl', function ($scope, $timeout, $mdSidenav, $cookieStore,$cookies,$location) {
+app.controller('MembersAreaCtrl', function ($scope, $timeout, $mdSidenav, $cookieStore,$cookies,$location,$routeParams) {
 
     $scope.userName = $cookies.get("uname");
     $scope.toggleLeft = buildToggler('left');
     $scope.toggleRight = buildToggler('right');
 
+    var id1 = $routeParams.id;
+    console.log(id1);
     function buildToggler(componentId) {
         return function() {
             $mdSidenav(componentId).toggle();

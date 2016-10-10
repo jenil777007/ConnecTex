@@ -90,29 +90,32 @@
 </div>
 
 
-<div style="overflow: scroll; background-color: aquamarine; height: 300px; width: 150px">
-    <p ng-repeat="i in item">
-    {{i}}
-        </p>
-</div>
-<div layout="row" style="margin-top: 2%" class="animated bounceInDown">
-
+<div layout="row" style="margin-top: 5%" class="animated bounceInDown">
     <md-content layout="row" style="height: 500%; width: 100%;">
-        <md-card style="height: 250%; width: 30%;">
-            <md-card-content>
-                <p>hello</p>
-            </md-card-content>
-        </md-card>
-        <md-card style="height: 250%; width: 30%;">
-            <md-card-content>
-                <p>hello1</p>
-            </md-card-content>
-        </md-card>
-        <md-card style="height: 250%; width: 30%;">
-            <md-card-content>
-                <p>hello2</p>
-            </md-card-content>
-        </md-card>
-    </md-content>
+            <div style="overflow: scroll; margin-left:12%; height: 500px; width: 300px;">
+                <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
+                    <md-card-content>
+                        {{i}}
+                    </md-card-content>
+                </md-card>
+            </div>
+        <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;">
+            <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
+                <md-card-content>
+                    {{i}}
+                </md-card-content>
+            </md-card>
+        </div>
+        <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;">
+            <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
+                <md-card-content>
+                    {{i}}
+                </md-card-content>
+            </md-card>
+        </div>
+
+
+        </md-content>
 </div>
+
 </div>
