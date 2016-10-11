@@ -1,3 +1,4 @@
+/* This is a compiled file, you should be editing the file in the templates directory */
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
@@ -33,7 +34,7 @@
     display: block;
     border-width: 30px;
     border-style: double;
-    border-color: #dd8d04 transparent transparent;
+    border-color: #eb7a55 transparent transparent;
     border-radius: 50%;
 
     -webkit-animation: spin 1s linear infinite;
@@ -52,22 +53,30 @@
     display: block;
     border-width: 10px;
     border-style: solid;
-    border-color: #dd8d04 transparent transparent;
+    border-color: #eb7a55 transparent transparent;
     border-radius: 50%;
 }
 
 @-webkit-keyframes spin {
-    100% { -webkit-transform: rotate(359deg); }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
 }
 
 @-moz-keyframes spin {
-    100% { -moz-transform: rotate(359deg); }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
 }
 
 @-o-keyframes spin {
-    100% { -moz-transform: rotate(359deg); }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
 }
 
 @keyframes spin {
-    100% {  transform: rotate(359deg); }
+    100% {
+        transform: rotate(359deg);
+    }
 }
