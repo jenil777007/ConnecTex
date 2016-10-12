@@ -15,23 +15,23 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
   $post = json_decode(file_get_contents("php://input"), true);
 
 
-          $query = "SELECT user_id,company_name FROM user";
+          $query = "SELECT id,company_name FROM user";
           $result = mysqli_query($connection->mycon,$query);
 
 
           $sql = mysqli_num_rows($result);
-            echo "user data";
-            echo $sql;
+            //echo "user data";
+            //echo $sql;
             while($a = mysqli_fetch_assoc($result))
             {
 
                 //echo json_encode($a);
-         $query1 = "SELECT user_id,request.material_id,material_name,material_width,price,peak,fani FROM request JOIN material where request.material_id = material.material_id AND request.user_id = '$a[user_id]' ";
+         $query1 = "SELECT user_id,request.material_id,material_name,material_width,price,peak,fani FROM request JOIN material where request.material_id = material.id AND request.user_id = '$a[id]' ";
                              $result1 = mysqli_query($connection->mycon,$query1);
 
                              while($b = mysqli_fetch_assoc($result1))
                              {
-                                    echo json_encode($b);
+                                   $x[] = $b;
                              }
 
                       //echo $a['id'];
@@ -58,7 +58,7 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 
             }
 
-    die(json_encode($b));
+    die(json_encode($x));
 
 
 

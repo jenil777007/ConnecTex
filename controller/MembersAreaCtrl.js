@@ -1,6 +1,6 @@
 var app = angular.module('myapp');
 
-app.controller('MembersAreaCtrl', function ($scope, $timeout, $mdSidenav, $cookieStore,$cookies,$location,$routeParams) {
+app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, $cookieStore,$cookies,$location,$routeParams) {
 
     $scope.userName = $cookies.get("uname");
     $scope.toggleLeft = buildToggler('left');
@@ -16,7 +16,7 @@ app.controller('MembersAreaCtrl', function ($scope, $timeout, $mdSidenav, $cooki
 
     $scope.item = ['ahgdhg','bdsacvsaa','cdsvasdvcds','dvdsavasdvsd','evdsvsavd','fsdvavsavds','h','g','j','y'];
 
-    $scope.OnLogout = function() {
+    $scope.onLogout = function() {
 
         var cookies = $cookies.getAll();
         console.log(cookies);
@@ -25,5 +25,26 @@ app.controller('MembersAreaCtrl', function ($scope, $timeout, $mdSidenav, $cooki
         });
         $location.path('/');
 
-    }
+    };
+
+    $http({
+        method: 'POST',
+        url: 'http://www.ctex.16mb.com/Material.php',
+        data: null,
+        headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+    })
+        .success(function (data) {
+
+            if (data) {
+               $scope.item = data;
+                console.log(data);
+            } else {
+                
+                console.log("wrong");
+                
+            }
+        })
+        .error(function (data) {
+            alert("error");
+        });
 });

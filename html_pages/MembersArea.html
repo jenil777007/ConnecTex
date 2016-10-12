@@ -5,12 +5,15 @@
         / / background-color: #f2f2f2;
 
         }
-        .div2{
+
+        .div2 {
             margin-top: 1.9%;
             height: 75%;
         }
+
         .md-virtual-repeat-offsetter div {
-            padding-left: 16px; }
+            padding-left: 16px;
+        }
 
         .testRotate:active {
             transform: rotate(180deg);
@@ -44,72 +47,86 @@
                 Messages
             </md-tooltip>
         </md-icon>
-    <a href="" style="float: right;margin-left: 1%;" class="animated rotateIn">TRANSACTIONS</a>
+        <a href="" style="float: right;margin-left: 1%;" class="animated rotateIn">TRANSACTIONS</a>
 
 
-</div>
+    </div>
 
-<div>
+    <div>
 
-    <section layout="row">
+        <section layout="row">
 
-        <md-sidenav class="div2" md-component-id="left" md-disable-backdrop md-whiteframe="4">
-            <center>
-            <md-toolbar class="md-theme-indigo" style="background-color: #E66C54 ">
-                <h1 class="md-toolbar-tools">Profile</h1>
-            </md-toolbar>
+            <md-sidenav class="div2" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+                <center>
+                    <md-toolbar class="md-theme-indigo" style="background-color: #E66C54 ">
+                        <md-card-header>
+                            <md-card-avatar>
+                                <img class="md-user-avatar" src="http://www.peninsulaflyfishers.org/resources/Documents/Fly_Tying/usingHerl/rightHerlWeb.jpg" width="20px" height="20px">
+                            </md-card-avatar>
+                            <md-card-header-text>
+                                <span class="md-title">HTML5</span>
+                                <span class="md-subhead">Learn HTML5 @TutorialsPoint.com</span>
+                            </md-card-header-text>
+                        </md-card-header>
+                    </md-toolbar>
 
-            <md-content layout-margin>
-                <img src="" alt="Your pic here">
+                    <md-content layout-margin>
+                        <img src="" alt="Your pic here">
+                    </md-content>
+                    <md-content layout-margin>
+                        <label>{{userName}}</label>
+                    </md-content>
+                    <md-content layout-margin>
+                        <label>Company Name Here</label>
+                    </md-content>
+                    <md-content layout-margin>
+                        <a href="">Status</a>
+                    </md-content>
+
+                </center>
+            </md-sidenav>
+
+            <md-content>
+
             </md-content>
-                <md-content layout-margin>
-                    <label>{{userName}}</label>
-                </md-content>
-                <md-content layout-margin>
-                    <label>Company Name Here</label>
-                </md-content>
-                <md-content layout-margin>
-                    <a href="">Status</a>
-                </md-content>
 
-            </center>
-        </md-sidenav>
+        </section>
 
-        <md-content >
-
-        </md-content>
-
-    </section>
-
-</div>
+    </div>
 
 
-<div layout="row" style="margin-top: 5%" class="animated bounceInDown">
-    <md-content layout="row" style="height: 500%; width: 100%;">
-        <div style="overflow: scroll; margin-left:12%; height: 500px; width: 300px;" class="hvr-grow-shadow">
+    <div layout="row" style="margin-top: 5%" class="animated bounceInDown">
+        <md-content layout="row" style="height: 500%; width: 100%;">
+            <div style="overflow: scroll; margin-left:12%; height: 500px; width: 300px;" class="hvr-grow-shadow">
+                <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
+                    <md-card-content>
+                        <h5 style="float: right">{{i.price}}</h5>
+                        <h4 >{{i.material_name}}</h4>
+
+                        <label>Peak:{{i.peak}}</label> &nbsp;&nbsp;
+                        <label>Width:{{i.material_width}}</label> &nbsp;&nbsp;
+                        <label>Fani:{{i.fani}}</label>
+
+                    </md-card-content>
+                </md-card>
+            </div>
+            <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;" class="hvr-grow-shadow">
                 <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
                     <md-card-content>
                         {{i}}
                     </md-card-content>
                 </md-card>
             </div>
-        <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;" class="hvr-grow-shadow">
-            <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
-                <md-card-content>
-                    {{i}}
-                </md-card-content>
-            </md-card>
-        </div>
-        <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;" class="hvr-grow-shadow">
-            <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
-                <md-card-content>
-                    {{i}}
-                </md-card-content>
-            </md-card>
-        </div>
+            <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;" class="hvr-grow-shadow">
+                <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
+                    <md-card-content>
+                        {{i}}
+                    </md-card-content>
+                </md-card>
+            </div>
 
 
         </md-content>
-</div>
+    </div>
 
 </div>
