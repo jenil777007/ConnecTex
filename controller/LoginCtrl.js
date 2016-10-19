@@ -68,7 +68,14 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
                      console.log(data);
                      var id = data.id;
                      var role = data.role;
+
+                     // Storing data values in to cookies
+                     
                      $cookieStore.put('uname', u1);
+                     $cookieStore.put('name', data.name);
+                     $cookieStore.put('cname', data.company_name);
+                     $cookieStore.put('mobile', data.mobile);
+                     $cookieStore.put('address', data.address1);
                      
                      console.log(data.message);
                      toast($scope.message);

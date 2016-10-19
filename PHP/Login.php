@@ -39,7 +39,7 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
           if($sql>0){
 
             $abc["success"] = true;
-            $abc["message"] = "successfully LogedIn";
+            $abc["message"] = "Successfully Logged In";
             die(json_encode($abc));
           }else{
               $abc["success"] = false;

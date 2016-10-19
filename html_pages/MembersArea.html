@@ -7,8 +7,8 @@
         }
 
         .div2 {
-            margin-top: 1.9%;
-            height: 75%;
+            margin-top: 40px;
+            height: 95%;
         }
 
         .md-virtual-repeat-offsetter div {
@@ -44,7 +44,6 @@
              class="hvr-ripple-out">
         <label style="font-family: 'Cinzel';font-size: 25px;" class="hvr-grow">ConnecTex Inc.</label>
 
-
         <md-icon md-svg-src="img/micons/social/svg/production/ic_person_48px.svg" ng-click="onLogout()"
                  style="float: right;margin-left: 1%;width: 40px; height: 40px;" class="hvr-bounce-in  ">
             <md-tooltip md-direction="bottom">
@@ -71,26 +70,29 @@
                     <md-toolbar class="md-theme-indigo" style="background-color: #E66C54 ">
                         <md-card-header>
                             <md-card-avatar>
-                                <img class="md-user-avatar" src="http://www.peninsulaflyfishers.org/resources/Documents/Fly_Tying/usingHerl/rightHerlWeb.jpg" width="20px" height="20px">
+                                <img class="md-user-avatar"
+                                     src="http://www.peninsulaflyfishers.org/resources/Documents/Fly_Tying/usingHerl/rightHerlWeb.jpg"
+                                     width="200px" height="200px" style="border-radius: 100px;margin-top: 20px"><br><br>
                             </md-card-avatar>
                             <md-card-header-text>
-                                <span class="md-title">HTML5</span>
-                                <span class="md-subhead">Learn HTML5 @TutorialsPoint.com</span>
+                                <span class="md-title" style="font-size: 25px">{{usersName}}</span><br>
+                                <span class="md-subhead" style="font-size: 25px">{{userName}}</span>
                             </md-card-header-text>
                         </md-card-header>
                     </md-toolbar>
 
                     <md-content layout-margin>
-                        <img src="" alt="Your pic here">
+                        <label style="font-size: 15px;margin-top: 30px">{{userCompanyName}}</label>
                     </md-content>
                     <md-content layout-margin>
-                        <label>{{userName}}</label>
+                        <label style="font-size: 15px">{{userMobile}}</label>
                     </md-content>
                     <md-content layout-margin>
-                        <label>Company Name Here</label>
+                        <label style="font-size: 15px">{{userAddress}}</label>
                     </md-content>
+
                     <md-content layout-margin>
-                        <a href="">Status</a>
+                        <a href="" style="font-size: 15px">Status</a>
                     </md-content>
 
                 </center>

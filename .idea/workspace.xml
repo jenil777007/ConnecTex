@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/html_pages/MembersArea.html" line="132" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/html_pages/MembersArea.html" line="134" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="Added lot of Animations">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/Trending.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Material.php" afterPath="$PROJECT_DIR$/PHP/Material.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Login.php" afterPath="$PROJECT_DIR$/PHP/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/LoginCtrl.js" afterPath="$PROJECT_DIR$/controller/LoginCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" afterPath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/Route.js" afterPath="$PROJECT_DIR$/controller/Route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Login.html" afterPath="$PROJECT_DIR$/html_pages/Login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/MembersArea.html" afterPath="$PROJECT_DIR$/html_pages/MembersArea.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Register.html" afterPath="$PROJECT_DIR$/html_pages/Register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="ConnecTex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +36,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-513">
+            <state relative-caret-position="15">
               <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding />
             </state>
@@ -45,18 +46,18 @@
       <file leaf-file-name="Register.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_pages/Register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
+            <state relative-caret-position="2205">
               <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MembersArea.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MembersArea.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="390">
+              <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -66,6 +67,13 @@
                 <element signature="n#style#0;n#md-icon#2;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#md-card-avatar#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-content#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-content#1;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-content#2;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#md-content#3;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-content#0;n#div#3;n#div#0;n#!!top" expanded="true" />
@@ -84,17 +92,17 @@
       <file leaf-file-name="MembersAreaCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+            <state relative-caret-position="-16">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Material.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Material.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHP/Material.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="165">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -104,7 +112,7 @@
       <file leaf-file-name="Trending.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/Trending.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="420">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
@@ -114,30 +122,8 @@
       <file leaf-file-name="LoginCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#md-input-container#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="284">
+              <caret line="77" column="46" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -146,7 +132,7 @@
       <file leaf-file-name="Route.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/Route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="240">
               <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding />
             </state>
@@ -195,29 +181,26 @@
         <option value="$PROJECT_DIR$/lib/pace.min.js" />
         <option value="$PROJECT_DIR$/lib/progress.css" />
         <option value="$PROJECT_DIR$/lib/angular-loaders.js" />
-        <option value="$PROJECT_DIR$/PHP/Login.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/html_pages/Login.html" />
         <option value="$PROJECT_DIR$/controller/Route.js" />
-        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/PHP/Material.php" />
         <option value="$PROJECT_DIR$/PHP/Trending.php" />
+        <option value="$PROJECT_DIR$/PHP/Login.php" />
+        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/MembersArea.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -245,6 +228,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -335,7 +319,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,6 +449,7 @@
       <workItem from="1476165780577" duration="3750000" />
       <workItem from="1476640299937" duration="114000" />
       <workItem from="1476878438976" duration="9925000" />
+      <workItem from="1476896084085" duration="2502000" />
     </task>
     <task id="LOCAL-00001" summary="Added Title">
       <created>1470232391017</created>
@@ -653,7 +637,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165359000" />
+    <option name="totallyTimeSpent" value="167861000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,10 +649,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21800596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21763304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
@@ -861,7 +845,7 @@
     <entry file="file://$PROJECT_DIR$/img/micons/av/svg/production/ic_hd_24px.svg" />
     <entry file="file://$PROJECT_DIR$/html_pages/Register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
+        <state relative-caret-position="2205">
           <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding />
         </state>
@@ -871,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,37 +862,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/Route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="240">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Material.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Trending.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="420">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
@@ -917,15 +883,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
+        <state relative-caret-position="15">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
+        <state relative-caret-position="650">
           <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#label#0;n#md-input-container#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -933,26 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        <state relative-caret-position="390">
+          <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -962,6 +920,13 @@
             <element signature="n#style#0;n#md-icon#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#md-card-avatar#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-content#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-content#1;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-content#2;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#md-content#3;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-content#0;n#div#3;n#div#0;n#!!top" expanded="true" />
@@ -973,6 +938,30 @@
             <element signature="n#style#0;n#md-card#0;n#div#2;n#md-content#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#md-card-content#0;n#md-card#0;n#div#2;n#md-content#0;n#div#3;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="77" column="46" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Material.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

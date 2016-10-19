@@ -2,7 +2,14 @@ var app = angular.module('myapp');
 
 app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, $cookieStore,$cookies,$location,$routeParams) {
 
+    // Retrieving the cookies values
+
     $scope.userName = $cookies.get("uname");
+    $scope.usersName = $cookies.get("name");
+    $scope.userCompanyName = $cookies.get("cname");
+    $scope.userMobile = $cookies.get("mobile");
+    $scope.userAddress = $cookies.get("address");
+
     $scope.toggleLeft = buildToggler('left');
     $scope.toggleRight = buildToggler('right');
 
