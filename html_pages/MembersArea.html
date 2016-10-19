@@ -20,6 +20,15 @@
             -moz-transform: rotate(180deg);
             -webkit-transform: rotate(180deg);
         }
+
+        .md-card-content {
+            display: block;
+            padding-top: 0px;
+        }
+
+        .h4 {
+            margin-top: 2%;
+        }
     </style>
 </head>
 <div>
@@ -34,6 +43,7 @@
         <img src="img/ctxlogo.png" ng-click="" style="width: 20px;height: 20px ;margin-left: 1.5%;margin-right: 1%"
              class="hvr-ripple-out">
         <label style="font-family: 'Cinzel';font-size: 25px;" class="hvr-grow">ConnecTex Inc.</label>
+
 
         <md-icon md-svg-src="img/micons/social/svg/production/ic_person_48px.svg" ng-click="onLogout()"
                  style="float: right;margin-left: 1%;width: 40px; height: 40px;" class="hvr-bounce-in  ">
@@ -94,15 +104,20 @@
 
     </div>
 
-
-    <div layout="row" style="margin-top: 5%" class="animated bounceInDown">
+    <div style="width: 50%; margin-left: 20%">
+        <md-input-container class="md-block">
+            <label>Search</label>
+            <input ng-model="text" type="text">
+        </md-input-container>
+    </div>
+    <div layout="row" style="margin-top: 0%" class="animated bounceInDown">
         <md-content layout="row" style="height: 500%; width: 100%;">
-            <div style="overflow: scroll; margin-left:12%; height: 500px; width: 300px;" class="hvr-grow-shadow">
-                <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
-                    <md-card-content>
+            <div style="overflow: scroll; margin-left:12%; height: 450px; width: 300px;" class="hvr-grow-shadow">
+                <md-card ng-repeat="i in item | filter:text" style="height: 110px; width: 250px; padding-top: 0px">
+                    <md-card-content class="md-card-content">
                         <h5 style="float: right">{{i.price}}</h5>
-                        <h4 >{{i.material_name}}</h4>
-
+                        <h4 class="h4">{{i.material_name}}</h4>
+                        <h5>{{i.company_name}}</h5>
                         <label>Peak:{{i.peak}}</label> &nbsp;&nbsp;
                         <label>Width:{{i.material_width}}</label> &nbsp;&nbsp;
                         <label>Fani:{{i.fani}}</label>
@@ -110,17 +125,18 @@
                     </md-card-content>
                 </md-card>
             </div>
-            <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;" class="hvr-grow-shadow">
+            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 300px;" class="hvr-grow-shadow">
                 <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
                     <md-card-content>
                         {{i}}
                     </md-card-content>
                 </md-card>
             </div>
-            <div style="overflow: scroll; margin-left: 5%; height: 500px; width: 300px;" class="hvr-grow-shadow">
-                <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
+            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 300px;" class="hvr-grow-shadow">
+                <md-card ng-repeat="i in trending | filter:text" style="height: 50px; width: 250px;">
                     <md-card-content>
-                        {{i}}
+                        <label>{{i.material_name}}</label>
+                        <label style="float: right">{{"₹" + " "+ i.material_price}}</label>
                     </md-card-content>
                 </md-card>
             </div>

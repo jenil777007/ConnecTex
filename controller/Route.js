@@ -14,7 +14,7 @@ app.config(function ($routeProvider) {
             templateUrl: 'html_pages/Next.html',
             controller: 'RegisterCtrl'
         })
-        .when('/Dashboard/:id', {
+        .when('/Dashboard/:id/:role', {
             templateUrl: 'html_pages/MembersArea.html',
             controller: 'MembersAreaCtrl'
         })

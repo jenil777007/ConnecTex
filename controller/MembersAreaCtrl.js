@@ -7,7 +7,10 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
     $scope.toggleRight = buildToggler('right');
 
     var id1 = $routeParams.id;
+    var role1 = $routeParams.role;
     console.log(id1);
+    console.log(role1);
+    
     function buildToggler(componentId) {
         return function() {
             $mdSidenav(componentId).toggle();
@@ -27,17 +30,19 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
 
     };
 
+    var role = {"role1": role1};
+
     $http({
         method: 'POST',
         url: 'http://www.ctex.16mb.com/Material.php',
-        data: null,
+        data: role,
         headers: {'Content-Type': 'application/x-www-form-unlencoded'}
     })
         .success(function (data) {
 
             if (data) {
                $scope.item = data;
-                console.log(data);
+                console.log($scope.item);
             } else {
                 
                 console.log("wrong");
@@ -47,4 +52,27 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
         .error(function (data) {
             alert("error");
         });
+
+    $http({
+        method: 'POST',
+        url: 'http://www.ctex.16mb.com/Trending.php',
+        data: null,
+        headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+    })
+        .success(function (data) {
+
+            if (data) {
+                $scope.trending = data;
+                
+            } else {
+
+                console.log("wrong");
+
+            }
+        })
+        .error(function (data) {
+            alert("error");
+        });
+
 });
+
