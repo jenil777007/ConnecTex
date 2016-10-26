@@ -18,6 +18,10 @@ app.config(function ($routeProvider) {
             templateUrl: 'html_pages/MembersArea.html',
             controller: 'MembersAreaCtrl'
         })
+        .when('/profile', {
+            templateUrl: 'html_pages/Profile.html',
+            controller: 'Profile'
+        })
         .otherwise({
             redirectTo: '/'
         });

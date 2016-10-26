@@ -122,42 +122,43 @@
 
                 <div class="div2">
                     <md-input-container class="input3" flex-gt-sm>
-                        <label style="color: aliceblue">Your First Name</label>
-                        <input ng-model="user.fname" pattern="[a-z]+" type="text" required>
+                        <label style="color: white">Your First Name</label>
+                        <input ng-model="user.fname" pattern="[a-z]+" type="text" style="color: white" required>
                     </md-input-container>
                 </div>
                 <div class="div3">
                     <md-input-container class="input3" flex-gt-sm>
-                        <label style="color: aliceblue">Your Last Name</label>
-                        <input ng-model="user.lname" pattern="[a-z]+" type="text" required>
+                        <label style="color: white">Your Last Name</label>
+                        <input ng-model="user.lname" pattern="[a-z]+" type="text" style="color: white" required>
                     </md-input-container>
                 </div>
 
                 <md-input-container class="input1">
-                    <label style="color: aliceblue">Enter Your Email</label>
+                    <label style=" color: white">Enter Your Email</label>
                     <input ng-model="user.email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
-                           required>
+                           style="color: white" required>
                 </md-input-container>
 
                 <md-input-container class="input1">
-                    <label style="color: aliceblue">Password</label>
-                    <input ng-model="user.password" type="password" required>
+                    <label style=" color: white">Password</label>
+                    <input ng-model="user.password" type="password" style="color: white" required>
                 </md-input-container>
 
                 <md-input-container class="input1">
-                    <label style="color: aliceblue">Retype Password</label>
-                    <input ng-model="user.cpassword" type="password" required>
+                    <label style="color: white">Retype Password</label>
+                    <input ng-model="user.cpassword" type="password" style="color: white" required>
                 </md-input-container>
 
                 <md-radio-group ng-model="user.type" class="radiobutton" required>
-                    <label style="color: aliceblue">Register as a:</label><br><br>
-                    <md-radio-button value="1" style="color: aliceblue;margin-left: 3.5%" class="md-primary">Weaver
+                    <label style="color: white">Register as a:</label><br><br>
+                    <md-radio-button value="1" style="color: white;margin-left: 3.5%" class="md-primary">Weaver
                     </md-radio-button>
-                    <md-radio-button value="2" style="color: aliceblue;margin-left: 3.5%"
+                    <md-radio-button value="2" style="color: white;margin-left: 3.5%"
                     " class="md-primary">Wholesaler</md-radio-button>
                 </md-radio-group>
 
-                <md-checkbox style="margin-left: 3.5%" ng-model="user.newsletter" ng-true-value="1" ng-false-value="0">
+                <md-checkbox style="margin-left: 3.5%; color: white" ng-model="user.newsletter" ng-true-value="1"
+                             ng-false-value="0">
                     Newsletter
                 </md-checkbox>
 
@@ -172,23 +173,23 @@
             <div ng-show="myvar==2" class="div5">
                 <md-input-container class="input2">
                     <label style="color: aliceblue">Your Company's Name</label>
-                    <input ng-model="user1.company_name" required>
+                    <input ng-model="user1.company_name" style="color: white" required>
                 </md-input-container>
 
                 <md-input-container class="input2">
                     <label style="color: aliceblue">Your Primary Address</label>
-                    <input ng-model="user1.address1" type="text" required>
+                    <input ng-model="user1.address1" type="text" style="color: white" required>
                 </md-input-container>
 
                 <md-input-container class="input2">
                     <label style="color: aliceblue">Your Secondary Address</label>
-                    <input ng-model="user1.address2" type="text">
+                    <input ng-model="user1.address2" type="text" style="color: white" required>
                 </md-input-container>
 
                 <md-checkbox style="color: aliceblue" ng-model="terms" class="checkbox" required>
-                    <a ng-click="showAlert($event)"><u>I agree to the Terms & Conditions</u></a>
+                    <a><u>I agree to the Terms & Conditions</u></a>
                 </md-checkbox>
-                ``
+
 
                 <center>
                     <md-button type="submit" class="md-raised" ng-click="Form3.$valid && OnRegister()" id="button">
@@ -201,7 +202,7 @@
             <div class="div6" ng-show="myvar==3">
                 <md-input-container class="input2">
                     <label style="color: aliceblue">Enter Your Mobile No</label>
-                    <input ng-model="user2.mobile" type="number" required>
+                    <input ng-model="user2.mobile" type="number" style="color: white" required>
                 </md-input-container>
 
                 <center>
@@ -213,8 +214,8 @@
         <form name="Form5" novalidate>
             <div class="div6" ng-show="myvar==4">
                 <md-input-container class="input2">
-                    <label>Enter Otp</label>
-                    <input ng-model="user3.otp" type="number" required>
+                    <label style="color: white">Enter Otp</label>
+                    <input ng-model="user3.otp" type="number" style="color: white" required>
                 </md-input-container>
 
                 <center>

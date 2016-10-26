@@ -29,6 +29,21 @@
         .h4 {
             margin-top: 2%;
         }
+
+        .size {
+            width: 100%;
+            margin-top: -3%;
+        }
+
+        #button {
+            color: white;
+            margin-left: 25%;
+            width: 20%;
+            margin-bottom: 10%;
+            background-color: #E66C54;
+        }
+
+
     </style>
 </head>
 <div>
@@ -71,7 +86,7 @@
                         <md-card-header>
                             <md-card-avatar>
                                 <img class="md-user-avatar"
-                                     src="http://www.peninsulaflyfishers.org/resources/Documents/Fly_Tying/usingHerl/rightHerlWeb.jpg"
+                                     src="img/profile.jpg"
                                      width="200px" height="200px" style="border-radius: 100px;margin-top: 20px"><br><br>
                             </md-card-avatar>
                             <md-card-header-text>
@@ -81,19 +96,18 @@
                         </md-card-header>
                     </md-toolbar>
 
-                    <md-content layout-margin>
-                        <label style="font-size: 15px;margin-top: 30px">{{userCompanyName}}</label>
+                    <md-content layout-margin ng-if="role">
+                        <h4 ng-click="mysale()">My sale</h4>
                     </md-content>
-                    <md-content layout-margin>
-                        <label style="font-size: 15px">{{userMobile}}</label>
-                    </md-content>
-                    <md-content layout-margin>
-                        <label style="font-size: 15px">{{userAddress}}</label>
+                    <md-content layout-margin ng-if="!role">
+
+                        <h4 ng-click="mypurchase()">My Purchase</h4>
                     </md-content>
 
                     <md-content layout-margin>
-                        <a href="" style="font-size: 15px">Status</a>
+                        <h4>Favourite</h4>
                     </md-content>
+
 
                 </center>
             </md-sidenav>
@@ -105,20 +119,24 @@
         </section>
 
     </div>
+</div>
 
+<div ng-show="onpage == 'home' ">
     <div style="width: 50%; margin-left: 20%">
         <md-input-container class="md-block">
             <label>Search</label>
             <input ng-model="text" type="text">
         </md-input-container>
     </div>
+    <label style="margin-left: 17%"><b>Featured</b></label> <label style="margin-left: 24%"><b>Find A Deal</b></label>
+    <label style="margin-left: 27%"><b>Trending</b></label>
     <div layout="row" style="margin-top: 0%" class="animated bounceInDown">
         <md-content layout="row" style="height: 500%; width: 100%;">
-            <div style="overflow: scroll; margin-left:12%; height: 450px; width: 300px;" class="hvr-grow-shadow">
-                <md-card ng-repeat="i in item | filter:text" style="height: 110px; width: 250px; padding-top: 0px">
+            <div style="overflow: scroll; margin-left:9%; height: 450px; width: 340px;" class="hvr-grow-shadow">
+                <md-card ng-repeat="i in item | filter:text" style="height: 110px; width: 280px; padding-top: 0px">
                     <md-card-content class="md-card-content">
-                        <h5 style="float: right">{{i.price}}</h5>
-                        <h4 class="h4">{{i.material_name}}</h4>
+                        <h5 style="margin-top: 4%; float: right; color: #E66C54">{{"₹" + " "+ i.price}}</h5>
+                        <h4 class="h4" style="color: #E66C54">{{i.material_name}}</h4>
                         <h5>{{i.company_name}}</h5>
                         <label>Peak:{{i.peak}}</label> &nbsp;&nbsp;
                         <label>Width:{{i.material_width}}</label> &nbsp;&nbsp;
@@ -127,15 +145,66 @@
                     </md-card-content>
                 </md-card>
             </div>
-            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 300px;" class="hvr-grow-shadow">
-                <md-card ng-repeat="i in item" style="height: 110px; width: 250px;">
+            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 340px;" class="hvr-grow-shadow">
+                <md-card style="height: 870px; width: 280px;">
                     <md-card-content>
-                        {{i}}
+                        <h4>Find deal via ConnecTex exclusively</h4>
+                        <label>Quality</label>
+                        <md-select ng-model="crequest.quality">
+
+                            <md-option ng-repeat="qlt in material" ng-value="qlt.material_name"
+                                       ng-disabled="$index === 1">
+                                {{qlt.material_name}}
+                            </md-option>
+                        </md-select>
+                        <md-input-container class="md-block">
+                            <label style="color: #5F5F5F">Quantity</label>
+                            <input ng-model="crequest.quantity" type="text">
+                        </md-input-container>
+
+                        <md-input-container class="size md-block">
+                            <label style="color: #5F5F5F">Price(min)</label>
+                            <input ng-model="crequest.minprice" type="text">
+                        </md-input-container>
+
+                        <md-input-container class="size md-block">
+                            <label style="color: #5F5F5F">Price(max)</label>
+                            <input ng-model="crequest.maxprice" type="text">
+                        </md-input-container>
+
+                        <md-input-container class="size md-block">
+                            <label style="color: #5F5F5F">Reed</label>
+                            <input ng-model="crequest.reed" type="text">
+                        </md-input-container>
+
+                        <md-input-container class="size md-block">
+                            <label style="color: #5F5F5F">Peak</label>
+                            <input ng-model="crequest.peak" type="text">
+                        </md-input-container>
+
+                        <md-input-container class="size md-block">
+                            <label style="color: #5F5F5F">Weight(grams)</label>
+                            <input ng-model="crequest.weight" type="text">
+                        </md-input-container>
+
+                        <md-input-container class="md-block">
+                            <label style="color: #5F5F5F">Width(inch)</label>
+                            <input ng-model="crequest.width" type="text">
+                        </md-input-container>
+
+                        <label style="color: #5F5F5F">Deal Type</label>
+                        <md-select ng-model="crequest.type" placeholder="SelectDeal Type" class="md-no-underline">
+                            <md-option value="buy">Want to Buy</md-option>
+                            <md-option value="sell">Want to Sell</md-option>
+                        </md-select>
+
+                        <md-button class="md-raised" id="button" ng-click="OnLogin()">Submit</md-button>
+
                     </md-card-content>
                 </md-card>
             </div>
-            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 300px;" class="hvr-grow-shadow">
-                <md-card ng-repeat="i in trending | filter:text" style="height: 50px; width: 250px;">
+            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 340px;" class="hvr-grow-shadow">
+                <md-card ng-repeat="i in trending | filter:text" style="height: 50px; width: 280px;">
                     <md-card-content>
                         <label>{{i.material_name}}</label>
                         <label style="float: right">{{"₹" + " "+ i.material_price}}</label>
@@ -147,4 +216,63 @@
         </md-content>
     </div>
 
+</div>
+
+<div ng-show="onpage == 'profile'">
+    <md-button class="btn md-raised" id="button" ng-click="back()">Back</md-button>
+    <md-card style="height: 870px; width: 450px; margin-left: 38%; margin-top: -5%">
+        <md-card-content style="margin-left: 1%">
+            <h2>Make A Deal</h2>
+            <label>Quality</label>
+            <md-select ng-model="crequest.quality">
+
+                <md-option ng-repeat="qlt in material" ng-value="qlt.material_name" ng-disabled="$index === 1">
+                    {{qlt.material_name}}
+                </md-option>
+            </md-select>
+            <md-input-container class="md-block">
+                <label style="color: #5F5F5F">Quantity</label>
+                <input ng-model="crequest.quantity" type="text">
+            </md-input-container>
+
+            <md-input-container class="size md-block">
+                <label style="color: #5F5F5F">Price(min)</label>
+                <input ng-model="crequest.minprice" type="text">
+            </md-input-container>
+
+            <md-input-container class="size md-block">
+                <label style="color: #5F5F5F">Price(max)</label>
+                <input ng-model="crequest.maxprice" type="text">
+            </md-input-container>
+
+            <md-input-container class="size md-block">
+                <label style="color: #5F5F5F">Reed</label>
+                <input ng-model="crequest.reed" type="text">
+            </md-input-container>
+
+            <md-input-container class="size md-block">
+                <label style="color: #5F5F5F">Peak</label>
+                <input ng-model="crequest.peak" type="text">
+            </md-input-container>
+
+            <md-input-container class="size md-block">
+                <label style="color: #5F5F5F">Weight(grams)</label>
+                <input ng-model="crequest.weight" type="text">
+            </md-input-container>
+
+            <md-input-container class="md-block">
+                <label style="color: #5F5F5F">Width(inch)</label>
+                <input ng-model="crequest.width" type="text">
+            </md-input-container>
+
+            <label style="color: #5F5F5F">Deal Type</label>
+            <md-select ng-model="crequest.type" placeholder="SelectDeal Type" class="md-no-underline">
+                <md-option value="buy">Want to Buy</md-option>
+                <md-option value="sell">Want to Sell</md-option>
+            </md-select>
+
+            <md-button class="md-raised" id="button" ng-click="OnLogin()">Submit</md-button>
+
+        </md-card-content>
+    </md-card>
 </div>

@@ -13,11 +13,30 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
     $scope.toggleLeft = buildToggler('left');
     $scope.toggleRight = buildToggler('right');
 
-    var id1 = $routeParams.id;
-    var role1 = $routeParams.role;
-    console.log(id1);
-    console.log(role1);
+    $scope.onpage = "home";
+    $scope.mysale = function () {
+        $scope.onpage = "profile";
+    };
+    $scope.purchase = function () {
+        $scope.onpage = "profile";
+    };
+
+    $scope.back = function () {
+        $scope.onpage = "home";
+    };
     
+    var id1 = $routeParams.id;
+    $scope.role1 = $routeParams.role;
+
+    if ($scope.role1 == 1) {
+        $scope.role = true;
+    } else {
+        $scope.role = false;
+    }
+    console.log(id1);
+    console.log($scope.role1);
+
+
     function buildToggler(componentId) {
         return function() {
             $mdSidenav(componentId).toggle();
@@ -26,22 +45,13 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
 
     $scope.item = ['ahgdhg','bdsacvsaa','cdsvasdvcds','dvdsavasdvsd','evdsvsavd','fsdvavsavds','h','g','j','y'];
 
-    $scope.onLogout = function() {
 
-        var cookies = $cookies.getAll();
-        console.log(cookies);
-        angular.forEach(cookies, function (v, k) {
-            $cookies.remove(k);
-        });
-        $location.path('/');
+    var role = {"role1": $scope.role1};
 
-    };
-
-    var role = {"role1": role1};
 
     $http({
         method: 'POST',
-        url: 'http://www.ctex.16mb.com/Material.php',
+        url: 'http://www.ctex.16mb.com/Request.php',
         data: role,
         headers: {'Content-Type': 'application/x-www-form-unlencoded'}
     })
@@ -80,6 +90,38 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
         .error(function (data) {
             alert("error");
         });
+
+    $http({
+        method: 'POST',
+        url: 'http://www.ctex.16mb.com/Material.php',
+        data: null,
+        headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+    })
+        .success(function (data) {
+
+            if (data) {
+                $scope.material = data;
+
+            } else {
+
+                console.log("wrong");
+
+            }
+        })
+        .error(function (data) {
+            alert("error");
+        });
+
+    $scope.onLogout = function () {
+
+        var cookies = $cookies.getAll();
+        console.log(cookies);
+        angular.forEach(cookies, function (v, k) {
+            $cookies.remove(k);
+        });
+        $location.path('/');
+
+    };
 
 });
 

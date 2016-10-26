@@ -29,9 +29,15 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
         //console.log(fn);
 
             $scope.user.name = $scope.user.fname + " " + $scope.user.lname;
+        var pass = $scope.user.password;
+        var cpass = $scope.user.cpassword;
+        if (pass == cpass) {
             $scope.myvar = 2;
             console.log("success");
-
+        }
+        else {
+            toast("Passwords are not match.....");
+        }
 
     };
 
@@ -73,7 +79,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
         $scope.myvar = 3;
         $scope.final1 = angular.merge($scope.user,$scope.user1);
         console.log($scope.final1);
-    }
+    };
 
     $scope.Onotp= function() {
         $scope.myvar = 4;
@@ -107,7 +113,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
             .error(function (data) {
                 alert("error");
             });
-    }
+    };
 
     $scope.Onconfirm= function() {
         console.log($scope.user3);
@@ -127,7 +133,7 @@ app.controller("RegisterCtrl",["$scope","$http","$location","$mdDialog","$mdToas
                     $scope.message = data.message;
                     console.log(data.message);
                     toast($scope.message);
-                    $location.path('/Dashboard');
+                    $location.path('/');
 
                 } else {
                     $scope.message = data.message;
