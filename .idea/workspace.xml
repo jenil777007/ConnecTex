@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/html_pages/MembersArea.html" line="151" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/html_pages/MembersArea.html" line="152" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="Added lot of Animations">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/Request.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html_pages/Profile.html" />
+    <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="final 26-10">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/Material.php" afterPath="$PROJECT_DIR$/PHP/Material.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" afterPath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/RegisterCtrl.js" afterPath="$PROJECT_DIR$/controller/RegisterCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/Route.js" afterPath="$PROJECT_DIR$/controller/Route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Login.html" afterPath="$PROJECT_DIR$/html_pages/Login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/MembersArea.html" afterPath="$PROJECT_DIR$/html_pages/MembersArea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Register.html" afterPath="$PROJECT_DIR$/html_pages/Register.html" />
     </list>
     <ignored path="ConnecTex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,54 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html_pages/Register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3502">
-              <caret line="206" column="24" selection-start-line="206" selection-start-column="24" selection-end-line="206" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#1;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#2;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#2;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-radio-group#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-radio-button#0;n#md-radio-group#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-radio-button#1;n#md-radio-group#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-checkbox#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#0;n#div#0;n#form#1;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#1;n#div#0;n#form#1;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#2;n#div#0;n#form#1;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-checkbox#0;n#div#0;n#form#1;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#form#2;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#0;n#div#0;n#form#2;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#form#3;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#md-input-container#0;n#div#0;n#form#3;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/RegisterCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="135" column="37" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -166,7 +114,7 @@
       <file leaf-file-name="LoginCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1445">
+            <state relative-caret-position="1009">
               <caret line="85" column="43" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="43" />
               <folding />
             </state>
@@ -176,7 +124,7 @@
       <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="867">
               <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -198,7 +146,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHP/Login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
@@ -271,10 +219,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -301,6 +249,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -391,8 +341,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,7 +473,9 @@
       <workItem from="1476878438976" duration="9925000" />
       <workItem from="1476896084085" duration="2502000" />
       <workItem from="1476899830165" duration="16560000" />
-      <workItem from="1477374847961" duration="3306000" />
+      <workItem from="1477374847961" duration="3405000" />
+      <workItem from="1479169607397" duration="1654000" />
+      <workItem from="1479488655451" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="Added Title">
       <created>1470232391017</created>
@@ -709,11 +659,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476125399616</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="final 26-10">
+      <created>1477448743978</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1477448743978</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187727000" />
+    <option name="totallyTimeSpent" value="190876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,10 +682,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22021116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21726191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
@@ -779,7 +736,8 @@
     <MESSAGE value="10/10/1" />
     <MESSAGE value="bhautik" />
     <MESSAGE value="Added lot of Animations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added lot of Animations" />
+    <MESSAGE value="final 26-10" />
+    <option name="LAST_COMMIT_MESSAGE" value="final 26-10" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -993,22 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="43" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/Route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1035,8 +977,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/Register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3502">
-          <caret line="206" column="24" selection-start-line="206" selection-start-column="24" selection-end-line="206" selection-end-column="24" />
+        <state relative-caret-position="3519">
+          <caret line="207" column="24" selection-start-line="207" selection-start-column="24" selection-end-line="207" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#md-input-container#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -1066,7 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="867">
           <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -1077,10 +1019,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1009">
+          <caret line="85" column="43" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
           <folding />
         </state>
       </provider>
