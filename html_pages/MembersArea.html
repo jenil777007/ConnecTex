@@ -55,9 +55,10 @@
                 Profile
             </md-tooltip>
         </md-icon>
-        <img src="img/ctxlogo.png" ng-click="" style="width: 20px;height: 20px ;margin-left: 1.5%;margin-right: 1%"
+        <img src="img/ctxlogo.png" ng-click="Home()"
+             style="width: 20px;height: 20px ;margin-left: 1.5%;margin-right: 1%"
              class="hvr-ripple-out">
-        <label style="font-family: 'Cinzel';font-size: 25px;" class="hvr-grow">ConnecTex Inc.</label>
+        <label style="font-family: 'Cinzel';font-size: 25px;" class="hvr-grow" ng-click="Home()">ConnecTex Inc.</label>
 
         <md-icon md-svg-src="img/micons/social/svg/production/ic_person_48px.svg" ng-click="onLogout()"
                  style="float: right;margin-left: 1%;width: 40px; height: 40px;" class="hvr-bounce-in  ">
@@ -96,18 +97,23 @@
                         </md-card-header>
                     </md-toolbar>
 
-                    <md-content layout-margin ng-if="role">
-                        <h4 ng-click="mysale()">My sale</h4>
-                    </md-content>
-                    <md-content layout-margin ng-if="!role">
-
-                        <h4 ng-click="mypurchase()">My Purchase</h4>
+                    <md-content layout-margin>
+                        <h4 ng-click="Home()">
+                            <md-button>Home</md-button>
+                        </h4>
                     </md-content>
 
                     <md-content layout-margin>
-                        <h4>Favourite</h4>
+                        <h4 ng-click="mysale()">
+                            <md-button>My sale</md-button>
+                        </h4>
                     </md-content>
 
+                    <md-content layout-margin>
+                        <h4 ng-click="message()">
+                            <md-button>Compose Message</md-button>
+                        </h4>
+                    </md-content>
 
                 </center>
             </md-sidenav>
@@ -218,8 +224,7 @@
 
 </div>
 
-<div ng-show="onpage == 'profile'">
-    <md-button class="btn md-raised" id="button" ng-click="back()">Back</md-button>
+<div ng-show="onpage == 'profile'" class="animated fadeInLeft">
     <md-card style="height: 870px; width: 450px; margin-left: 38%; margin-top: -5%">
         <md-card-content style="margin-left: 1%">
             <h2>Make A Deal</h2>
@@ -274,5 +279,29 @@
             <md-button class="md-raised" id="button" ng-click="OnLogin()">Submit</md-button>
 
         </md-card-content>
+    </md-card>
+</div>
+
+<div ng-show="onpage == 'message'" class="animated fadeInLeft">
+
+    <md-card style="height: 500px; width: 450px; margin-left: 38%; margin-top: 40px">
+        <md-card-content style="margin-left: 1%">
+            <h2>Compose A Message</h2>
+        </md-card-content>
+        <md-autocomplete
+                md-selected-item="MembersAreaCtrl.selectedItem"
+                md-search-text="MembersAreaCtrl.searchText"
+                md-items="item in MembersAreaCtrl.querySearch(ctrl.searchText)"
+                md-item-text="item.display"
+                md-min-length="0"
+                placeholder="TO: Search for a user here...">
+            <md-item-template>
+                <span md-highlight-text="MembersAreaCtrl    .searchText" md-highlight-flags="^i">{{item.display}}</span>
+            </md-item-template>
+        </md-autocomplete>
+        <md-card-content style="margin-left: 1%;margin-top: 20px;">
+            <textarea style="height: 150px;width: 400px;" placeholder="Type your message here..."></textarea>
+        </md-card-content>
+        <md-button class="md-raised" style="margin-left: 1%;margin-top: 20px;">Send</md-button>
     </md-card>
 </div>

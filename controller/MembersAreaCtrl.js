@@ -17,8 +17,12 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
     $scope.mysale = function () {
         $scope.onpage = "profile";
     };
-    $scope.purchase = function () {
-        $scope.onpage = "profile";
+    $scope.Home = function () {
+        $scope.onpage = "home";
+    };
+
+    $scope.message = function () {
+        $scope.onpage = "message";
     };
 
     $scope.back = function () {
