@@ -8,7 +8,7 @@
 
         .div2 {
             margin-top: 40px;
-            height: 95%;
+            height: 93.5%;
         }
 
         .md-virtual-repeat-offsetter div {
@@ -37,13 +37,34 @@
 
         #button {
             color: white;
-            margin-left: 25%;
+            margin-left: 39%;
             width: 20%;
-            margin-bottom: 10%;
+            margin-bottom: 0%;
             background-color: #E66C54;
         }
 
+        .input3 {
+            margin-left: 1%;
+            margin-top: -0.5%;
+            width: 90%;
+            position: relative;
+        }
 
+        .div3 {
+            float: left;
+            width: 50%;
+            margin-bottom: -4%;
+        }
+
+        .div4 {
+            float: right;
+            width: 50%;
+            margin-bottom: -4%;
+        }
+
+        .img {
+            height: 20%;
+        }
     </style>
 </head>
 <div>
@@ -97,19 +118,25 @@
                         </md-card-header>
                     </md-toolbar>
 
-                    <md-content layout-margin>
+                    <md-content>
                         <h4 ng-click="Home()">
                             <md-button>Home</md-button>
                         </h4>
                     </md-content>
 
-                    <md-content layout-margin>
+                    <md-content>
+                        <h4 ng-click="profile()">
+                            <md-button>My Profile</md-button>
+                        </h4>
+                    </md-content>
+
+                    <md-content>
                         <h4 ng-click="mysale()">
                             <md-button>My sale</md-button>
                         </h4>
                     </md-content>
 
-                    <md-content layout-margin>
+                    <md-content>
                         <h4 ng-click="message()">
                             <md-button>Compose Message</md-button>
                         </h4>
@@ -156,7 +183,7 @@
                     <md-card-content>
                         <h4>Find deal via ConnecTex exclusively</h4>
                         <label>Quality</label>
-                        <md-select ng-model="crequest.quality">
+                        <md-select ng-model="crequest.quality" style="margin-top: -1%">
 
                             <md-option ng-repeat="qlt in material" ng-value="qlt.material_name"
                                        ng-disabled="$index === 1">
@@ -224,54 +251,65 @@
 
 </div>
 
-<div ng-show="onpage == 'profile'" class="animated fadeInLeft">
-    <md-card style="height: 870px; width: 450px; margin-left: 38%; margin-top: -5%">
-        <md-card-content style="margin-left: 1%">
-            <h2>Make A Deal</h2>
-            <label>Quality</label>
-            <md-select ng-model="crequest.quality">
+<div ng-show="onpage == 'mysale'" class="animated fadeInLeft">
+    <md-card style="height: 40%; width: 50%; margin-left: 27%; margin-top: 5%; ">
+        <md-card-content style="margin-left: 1%;">
+            <h2 style="margin-top: -1%">Make A Deal</h2>
+            <label style="margin-bottom: 0%">Quality</label>
+            <md-select ng-model="crequest.quality" style="margin-bottom: 0%; margin-top: 0%">
 
                 <md-option ng-repeat="qlt in material" ng-value="qlt.material_name" ng-disabled="$index === 1">
                     {{qlt.material_name}}
                 </md-option>
             </md-select>
-            <md-input-container class="md-block">
+            <md-input-container class="md-block" style="margin-bottom: 0%">
                 <label style="color: #5F5F5F">Quantity</label>
                 <input ng-model="crequest.quantity" type="text">
             </md-input-container>
 
-            <md-input-container class="size md-block">
+            <div class="div3">
+                <md-input-container class="input3">
                 <label style="color: #5F5F5F">Price(min)</label>
                 <input ng-model="crequest.minprice" type="text">
             </md-input-container>
+            </div>
 
-            <md-input-container class="size md-block">
+            <div class="div4">
+                <md-input-container class="input3">
                 <label style="color: #5F5F5F">Price(max)</label>
                 <input ng-model="crequest.maxprice" type="text">
             </md-input-container>
+            </div>
 
-            <md-input-container class="size md-block">
+            <div class="div3">
+                <md-input-container class="input3">
                 <label style="color: #5F5F5F">Reed</label>
                 <input ng-model="crequest.reed" type="text">
             </md-input-container>
-
-            <md-input-container class="size md-block">
+            </div>
+            <div class="div4">
+                <md-input-container class="input3">
                 <label style="color: #5F5F5F">Peak</label>
                 <input ng-model="crequest.peak" type="text">
             </md-input-container>
-
-            <md-input-container class="size md-block">
+            </div>
+            <div class="div3">
+                <md-input-container class="input3">
                 <label style="color: #5F5F5F">Weight(grams)</label>
                 <input ng-model="crequest.weight" type="text">
             </md-input-container>
-
-            <md-input-container class="md-block">
+            </div>
+            <div class="div4">
+                <md-input-container class="input3">
                 <label style="color: #5F5F5F">Width(inch)</label>
                 <input ng-model="crequest.width" type="text">
             </md-input-container>
+            </div>
 
-            <label style="color: #5F5F5F">Deal Type</label>
-            <md-select ng-model="crequest.type" placeholder="SelectDeal Type" class="md-no-underline">
+
+            <label style="color: #5F5F5F; margin-left: 1%;">Deal Type</label>
+            <md-select ng-model="crequest.type" placeholder="SelectDeal Type" class="md-no-underline"
+                       style="margin-bottom: 0.5%; margin-top: 0%; margin-left: .5%">
                 <md-option value="buy">Want to Buy</md-option>
                 <md-option value="sell">Want to Sell</md-option>
             </md-select>
@@ -304,4 +342,41 @@
         </md-card-content>
         <md-button class="md-raised" style="margin-left: 1%;margin-top: 20px;">Send</md-button>
     </md-card>
+</div>
+
+
+<div ng-show="onpage == 'profile'" class="animated fadeInLeft">
+    <md-content class="md-padding" layout-xs="column" layout="row">
+        <div flex-xs flex-gt-xs="50" layout="column">
+            <md-card>
+                <img ng-src="img/profile.jpg" height="20%" width="20%">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">Action buttons</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <p>
+                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as
+                        well...
+                    </p>
+                    <p>
+                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as
+                        well...
+                    </p>
+                    <p>
+                        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+                        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as
+                        well...
+                    </p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </md-content>
 </div>

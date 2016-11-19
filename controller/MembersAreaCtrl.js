@@ -13,14 +13,16 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
     $scope.toggleLeft = buildToggler('left');
     $scope.toggleRight = buildToggler('right');
 
-    $scope.onpage = "home";
+    $scope.onpage = "profile";
     $scope.mysale = function () {
-        $scope.onpage = "profile";
+        $scope.onpage = "mysale";
     };
     $scope.Home = function () {
         $scope.onpage = "home";
     };
-
+    $scope.profile = function () {
+        $scope.onpage = "profile";
+    };
     $scope.message = function () {
         $scope.onpage = "message";
     };
