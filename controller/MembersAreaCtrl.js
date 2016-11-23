@@ -49,7 +49,7 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
         }
     }
 
-    $scope.item = ['ahgdhg','bdsacvsaa','cdsvasdvcds','dvdsavasdvsd','evdsvsavd','fsdvavsavds','h','g','j','y'];
+    // $scope.item = ['ahgdhg','bdsacvsaa','cdsvasdvcds','dvdsavasdvsd','evdsvsavd','fsdvavsavds','h','g','j','y'];
 
 
     var role = {"role1": $scope.role1};
