@@ -205,9 +205,9 @@
                         <label>Quality</label>
                         <md-select ng-model="crequest.quality" style="margin-top: -1%">
 
-                            <md-option ng-repeat="qlt in material" ng-value="qlt.material_name"
+                            <md-option ng-repeat="crequest in material" ng-value="crequest.id"
                                        ng-disabled="$index === 1">
-                                {{qlt.material_name}}
+                                {{crequest.material_name}}
                             </md-option>
                         </md-select>
                         <md-input-container class="md-block">
@@ -251,7 +251,7 @@
                             <md-option value="sell">Want to Sell</md-option>
                         </md-select>
 
-                        <md-button class="md-raised" id="button" ng-click="OnLogin()">Submit</md-button>
+                        <md-button class="md-raised" id="button" ng-click="dvc()">Submit</md-button>
 
                     </md-card-content>
                 </md-card>

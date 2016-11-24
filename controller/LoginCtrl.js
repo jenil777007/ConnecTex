@@ -7,6 +7,7 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
     $scope.user = {};
     $scope.user.Username = "nikhilsojitra0009@gmail.com";
     $scope.user.Password = "844e3ec00b011b120326834795314b71";
+
     var last = {
         bottom: false,
         top: true,

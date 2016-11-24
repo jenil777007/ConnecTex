@@ -1,6 +1,6 @@
 var app = angular.module('myapp');
 
-app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, $cookieStore,$cookies,$location,$routeParams) {
+app.controller('MembersAreaCtrl', function ($scope, $http, $timeout, $mdSidenav, $cookieStore, $cookies, $location, $routeParams, $mdToast) {
 
     // Retrieving the cookies values
     $scope.msg = {};
@@ -16,6 +16,45 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
     $scope.toggleRight = buildToggler('right');
 
     $scope.toggle = false;
+
+    //Toast
+
+    var last = {
+        bottom: false,
+        top: true,
+        left: false,
+        right: true
+    };
+    $scope.toastPosition = angular.extend({}, last);
+    $scope.getToastPosition = function () {
+        sanitizePosition();
+        return Object.keys($scope.toastPosition)
+            .filter(function (pos) {
+                return $scope.toastPosition[pos];
+            })
+            .join(' ');
+    };
+    function sanitizePosition() {
+        var current = $scope.toastPosition;
+        if (current.bottom && last.top) current.top = false;
+        if (current.top && last.bottom) current.bottom = false;
+        if (current.right && last.left) current.left = false;
+        if (current.left && last.right) current.right = false;
+        last = angular.extend({}, current);
+    }
+
+    var toast = function (abc) {
+        var pinTo = $scope.getToastPosition();
+        $mdToast.show(
+            $mdToast.simple()
+                .content(abc)
+                .position(pinTo)
+                .hideDelay(2000)
+        );
+
+    };
+
+
 
     $scope.onpage = "home";
     $scope.mysale = function () {
@@ -201,10 +240,12 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
                 if (data) {
                     $scope.feedback = data;
                     console.log($scope.feedback);
+                    toast(data.message);
 
                 } else {
 
                     console.log("wrong");
+                    toast(data.message);
 
                 }
             })
@@ -223,10 +264,12 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
 
             if (data) {
                 $scope.rmsg = data;
+                toast(data.message);
 
             } else {
 
                 console.log("wrong");
+                toast(data.message);
 
             }
         })
@@ -240,6 +283,17 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
         $scope.crequest.date = new Date();
         console.log($scope.crequest);
 
+        var toast = function (abc) {
+            var pinTo = $scope.getToastPosition();
+            $mdToast.show(
+                $mdToast.simple()
+                    .content(abc)
+                    .position(pinTo)
+                    .hideDelay(2000)
+            );
+
+        };
+
         $http({
             method: 'POST',
             url: 'http://www.ctex.16mb.com/MakeDeal.php',
@@ -251,10 +305,55 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
                 if (data) {
                     $scope.added = data;
                     console.log($scope.added);
+                    toast(data.message);
 
                 } else {
 
                     console.log("wrong");
+                    toast(data.message);
+
+                }
+            })
+            .error(function (data) {
+                alert("error");
+            });
+    };
+
+    $scope.dvc = function () {
+
+        $scope.crequest.id = id1;
+        $scope.crequest.date = new Date();
+        console.log($scope.crequest);
+
+        var toast = function (abc) {
+            var pinTo = $scope.getToastPosition();
+            $mdToast.show(
+                $mdToast.simple()
+                    .content(abc)
+                    .position(pinTo)
+                    .hideDelay(2000)
+            );
+
+        };
+
+        $http({
+            method: 'POST',
+            url: 'http://www.ctex.16mb.com/MakeDealViaConnectex.php',
+            data: $scope.crequest,
+            headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+        })
+            .success(function (data) {
+
+                if (data) {
+                    $scope.added = data;
+                    console.log($scope.added);
+
+                    toast(data.message);
+
+                } else {
+
+                    console.log("wrong");
+                    toast(data.message);
 
                 }
             })
