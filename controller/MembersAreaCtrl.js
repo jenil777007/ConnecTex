@@ -32,6 +32,8 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
     };
     
     var id1 = $routeParams.id;
+    $scope.idval = id1;
+    console.log($scope.idval);
     $scope.role1 = $routeParams.role;
 
     if ($scope.role1 == 1) {
@@ -53,7 +55,7 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
 
 
     var role = {"role1": $scope.role1};
-
+    var idval = {"id": $scope.idval};
 
     $http({
         method: 'POST',
@@ -108,6 +110,27 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
             if (data) {
                 $scope.material = data;
 
+            } else {
+
+                console.log("wrong");
+
+            }
+        })
+        .error(function (data) {
+            alert("error");
+        });
+
+    $http({
+        method: 'POST',
+        url: 'http://www.ctex.16mb.com/UserSaleInfo.php',
+        data: idval,
+        headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+    })
+        .success(function (data) {
+
+            if (data) {
+                $scope.item2 = data;
+                console.log($scope.item2);
             } else {
 
                 console.log("wrong");

@@ -5,8 +5,8 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
     $scope.isloaded = false;
     console.log("welcome");
     $scope.user = {};
-    $scope.user.Username = "abc@a.com";
-    $scope.user.Password = "abc";
+    $scope.user.Username = "nikhilsojitra0009@gmail.com";
+    $scope.user.Password = "844e3ec00b011b120326834795314b71";
     var last = {
         bottom: false,
         top: true,
@@ -76,7 +76,8 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
                      $cookieStore.put('cname', data.company_name);
                      $cookieStore.put('mobile', data.mobile);
                      $cookieStore.put('address', data.address1);
-                     
+
+
                      console.log(data.message);
                      toast($scope.message);
                      $location.path('/Dashboard/' + id + '/' + role);

@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="final 23-11">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/MakeDeal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/UserSaleInfo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Login.html" afterPath="$PROJECT_DIR$/html_pages/Login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/LoginCtrl.js" afterPath="$PROJECT_DIR$/controller/LoginCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" afterPath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/MembersArea.html" afterPath="$PROJECT_DIR$/html_pages/MembersArea.html" />
     </list>
     <ignored path="ConnecTex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +31,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
@@ -41,7 +44,7 @@
       <file leaf-file-name="Register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/Register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="425">
               <caret line="25" column="303" selection-start-line="25" selection-start-column="274" selection-end-line="25" selection-end-column="303" />
               <folding />
             </state>
@@ -61,12 +64,13 @@
       <file leaf-file-name="MembersArea.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="89" column="42" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="42" />
+            <state relative-caret-position="778">
+              <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#2;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -108,10 +112,6 @@
                 <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#2;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#3;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#4;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#5;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-select#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-card-content#1;n#md-card#0;n#div#3;n#!!top" expanded="true" />
@@ -135,11 +135,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MembersAreaCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MembersAreaCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="2125">
+              <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/Request.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MakeDeal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/MakeDeal.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserSaleInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/UserSaleInfo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -148,7 +178,7 @@
       <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
+            <state relative-caret-position="238">
               <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -206,23 +236,28 @@
         <option value="$PROJECT_DIR$/PHP/Register.php" />
         <option value="$PROJECT_DIR$/controller/RegisterCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/Register.html" />
-        <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
-        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/chat.html" />
         <option value="$PROJECT_DIR$/html_pages/Login.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/PHP/UserSaleInfo.php" />
+        <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
+        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
+        <option value="$PROJECT_DIR$/PHP/MakeDeal.php" />
         <option value="$PROJECT_DIR$/html_pages/MembersArea.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -362,7 +397,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="C:/xampp/htdocs/twitauth" />
+    <property name="last_opened_file_path" value="C:/xampp/htdocs/srp" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Bhautik Gosai/Documents/ConnecTex/html_pages/MembersArea.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -493,6 +528,7 @@
       <workItem from="1479554847650" duration="10088000" />
       <workItem from="1479883310722" duration="1119000" />
       <workItem from="1479885191670" duration="10227000" />
+      <workItem from="1479997320411" duration="6678000" />
     </task>
     <task id="LOCAL-00001" summary="Added Title">
       <created>1470232391017</created>
@@ -715,7 +751,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217547000" />
+    <option name="totallyTimeSpent" value="224225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,12 +763,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21683876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21651785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -741,6 +776,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -796,8 +832,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html_pages/Login1.html" />
-    <entry file="file://$PROJECT_DIR$/demo.html" />
     <entry file="file://$PROJECT_DIR$/controller/control.js" />
     <entry file="file://$PROJECT_DIR$/controller/main.js" />
     <entry file="file://$PROJECT_DIR$/controller/demo.js" />
@@ -910,13 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Material.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -954,14 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -970,10 +989,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
+    <entry file="file://$PROJECT_DIR$/html_pages/chat.html" />
+    <entry file="file://$PROJECT_DIR$/PHP/Register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="425">
+          <caret line="25" column="303" selection-start-line="25" selection-start-column="274" selection-end-line="25" selection-end-column="303" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/UserSaleInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/LoginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/MakeDeal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -986,41 +1057,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html_pages/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="73" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="303" selection-start-line="25" selection-start-column="274" selection-end-line="25" selection-end-column="303" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="89" column="42" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="42" />
+        <state relative-caret-position="778">
+          <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#2;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -1062,10 +1107,6 @@
             <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#2;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#3;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#4;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#5;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-select#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-card-content#1;n#md-card#0;n#div#3;n#!!top" expanded="true" />
@@ -1088,10 +1129,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
+        <state relative-caret-position="2125">
+          <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
           <folding />
         </state>
       </provider>

@@ -273,24 +273,11 @@
                     {{qlt.material_name}}
                 </md-option>
             </md-select>
+
             <md-input-container class="md-block" style="margin-bottom: 0%">
-                <label style="color: #5F5F5F">Quantity</label>
-                <input ng-model="crequest.quantity" type="text">
+                <label style="color: #5F5F5F">Price</label>
+                <input ng-model="crequest.price" type="text">
             </md-input-container>
-
-            <div class="div3">
-                <md-input-container class="input3">
-                <label style="color: #5F5F5F">Price(min)</label>
-                <input ng-model="crequest.minprice" type="text">
-            </md-input-container>
-            </div>
-
-            <div class="div4">
-                <md-input-container class="input3">
-                <label style="color: #5F5F5F">Price(max)</label>
-                <input ng-model="crequest.maxprice" type="text">
-            </md-input-container>
-            </div>
 
             <div class="div3">
                 <md-input-container class="input3">
@@ -318,12 +305,6 @@
             </div>
 
 
-            <label style="color: #5F5F5F; margin-left: 1%;">Deal Type</label>
-            <md-select ng-model="crequest.type" placeholder="SelectDeal Type" class="md-no-underline"
-                       style="margin-bottom: 0.5%; margin-top: 0%; margin-left: .5%">
-                <md-option value="buy">Want to Buy</md-option>
-                <md-option value="sell">Want to Sell</md-option>
-            </md-select>
 
             <md-button class="md-raised" id="button" ng-click="OnLogin()">Submit</md-button>
 
@@ -378,7 +359,7 @@
             </md-card>
     </div>
     <div style="overflow: scroll;height: 62.8%; width: 30%; margin-left: 10%; margin-top: 10%;background-color: #0F9E5E">
-        <md-card ng-repeat="i in item | filter:text" style=";height: 110px; width: 280px;">
+        <md-card ng-repeat="i in item2 | filter:text | filter: '!null'" style=";height: 110px; width: 280px;">
             <md-card-content class="md-card-content">
                 <h5 style="margin-top: 4%; float: right; color: #E66C54">{{"₹" + " "+ i.price}}</h5>
                 <h4 class="h4" style="color: #E66C54">{{i.material_name}}</h4>
