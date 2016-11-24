@@ -3,7 +3,7 @@ var app = angular.module('myapp');
 app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog","$mdToast","$cookieStore",function ($scope,$http,$location,$timeout,$mdDialog,$mdToast,$cookieStore) {
 
     $scope.isloaded = false;
-    console.log("welocme");
+    console.log("welcome");
     $scope.user = {};
     $scope.user.Username = "abc@a.com";
     $scope.user.Password = "abc";

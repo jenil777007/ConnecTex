@@ -8,7 +8,7 @@
 
         .div2 {
             margin-top: 40px;
-            height: 93.5%;
+            height: 95%;
         }
 
         .md-virtual-repeat-offsetter div {
@@ -43,6 +43,13 @@
             background-color: #E66C54;
         }
 
+        #button1 {
+            color: white;
+            margin-top: 10%;
+            width: 40%;
+            background-color: #E66C54;
+        }
+
         .input3 {
             margin-left: 1%;
             margin-top: -0.5%;
@@ -65,6 +72,7 @@
         .img {
             height: 20%;
         }
+
     </style>
 </head>
 <div>
@@ -77,9 +85,14 @@
             </md-tooltip>
         </md-icon>
         <img src="img/ctxlogo.png" ng-click="Home()"
-             style="width: 20px;height: 20px ;margin-left: 1.5%;margin-right: 1%"
+             style="width: 25px;height: 25px ;margin-left: 1.5%;margin-right: 1%"
              class="hvr-ripple-out">
-        <label style="font-family: 'Cinzel';font-size: 25px;" class="hvr-grow" ng-click="Home()">ConnecTex Inc.</label>
+        <label style="font-family: 'Cinzel';font-size: 25px;margin-left: 1.5%;" class="hvr-grow" ng-click="Home()">ConnecTex
+            Inc.
+            <md-tooltip md-direction="bottom">
+                Home
+            </md-tooltip>
+        </label>
 
         <md-icon md-svg-src="img/micons/social/svg/production/ic_person_48px.svg" ng-click="onLogout()"
                  style="float: right;margin-left: 1%;width: 40px; height: 40px;" class="hvr-bounce-in  ">
@@ -93,8 +106,6 @@
                 Messages
             </md-tooltip>
         </md-icon>
-        <a href="" style="float: right;margin-left: 1%;" class="animated rotateIn">TRANSACTIONS</a>
-
 
     </div>
 
@@ -165,7 +176,7 @@
     <label style="margin-left: 27%"><b>Trending</b></label>
     <div layout="row" style="margin-top: 0%" class="animated bounceInDown">
         <md-content layout="row" style="height: 500%; width: 100%;">
-            <div style="overflow: scroll; margin-left:9%; height: 450px; width: 340px;" class="hvr-grow-shadow">
+            <div style="overflow: scroll; margin-left:9%; height: 450px; width: 340px;" class="">
                 <md-card ng-repeat="i in item | filter:text" style="height: 110px; width: 280px; padding-top: 0px">
                     <md-card-content class="md-card-content">
                         <h5 style="margin-top: 4%; float: right; color: #E66C54">{{"₹" + " "+ i.price}}</h5>
@@ -178,7 +189,7 @@
                     </md-card-content>
                 </md-card>
             </div>
-            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 340px;" class="hvr-grow-shadow">
+            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 340px;">
                 <md-card style="height: 870px; width: 280px;">
                     <md-card-content>
                         <h4>Find deal via ConnecTex exclusively</h4>
@@ -236,7 +247,7 @@
                     </md-card-content>
                 </md-card>
             </div>
-            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 340px;" class="hvr-grow-shadow">
+            <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 340px;">
                 <md-card ng-repeat="i in trending | filter:text" style="height: 50px; width: 280px;">
                     <md-card-content>
                         <label>{{i.material_name}}</label>
@@ -345,18 +356,15 @@
 </div>
 
 
-<div ng-show="onpage == 'profile'" class="animated fadeInLeft">
-    <md-content class="md-padding" layout-xs="column" layout="row">
-        <div flex-xs flex-gt-xs="50" layout="column">
-            <md-card>
-                <img src="img/profile.jpg" style="height: 40%;width: 40%;">
-                <md-card-title>
-                    <md-card-title-text>
-                        <span class="md-headline">General Information</span>
-                    </md-card-title-text>
-                </md-card-title>
-                <md-card-content>
-                    <p>
+<div ng-show="onpage == 'profile'" layout="row"
+     style="height: 94%;width: 100%;  position: absolute; background-color: #2098d1;">
+
+    <div style="overflow: scroll;height: 64.5%; width: 30%; margin-left: 10%; margin-top: 10%;background-color: #0F9E5E">
+        <md-card style="height: 95%; width: 80%; ">
+            <md-card-content class="md-card-content">
+                <center>
+                    <img src="img/profile.jpg" style="height: 95%;width: 95%;margin-top: 1%;border-radius: 40%;">
+                    <p style="margin-top: 20px;">
                         {{userCompanyName}}
                     </p>
                     <p>
@@ -365,12 +373,34 @@
                     <p>
                         {{userMobile}}
                     </p>
+                </center>
                 </md-card-content>
-                <md-card-actions layout="row" layout-align="end center">
-                    <md-button>Action 1</md-button>
-                    <md-button>Action 2</md-button>
-                </md-card-actions>
             </md-card>
+    </div>
+    <div style="overflow: scroll;height: 62.8%; width: 30%; margin-left: 10%; margin-top: 10%;background-color: #0F9E5E">
+        <md-card ng-repeat="i in item | filter:text" style=";height: 110px; width: 280px;">
+            <md-card-content class="md-card-content">
+                <h5 style="margin-top: 4%; float: right; color: #E66C54">{{"₹" + " "+ i.price}}</h5>
+                <h4 class="h4" style="color: #E66C54">{{i.material_name}}</h4>
+                <h5>{{i.company_name}}</h5>
+                <label>Peak:{{i.peak}}</label> &nbsp;&nbsp;
+                <label>Width:{{i.material_width}}</label> &nbsp;&nbsp;
+                <label>Fani:{{i.fani}}</label>
+
+            </md-card-content>
+        </md-card>
         </div>
-    </md-content>
+    <div style="height: 72.5%; width: 30%; margin-left: 10%; margin-top: 10%;">
+        <md-button class="md-raised" style="background-color: #E66C54; margin-top: 50%;" id="button1"
+                   ng-click="OnLogin()">Update Profile
+        </md-button>
+        <br>
+        <md-button class="md-raised" style="background-color: #E66C54; margin-top: 10%;" id="button1"
+                   ng-click="OnLogin()">Update Sales
+        </md-button>
+        <br>
+        <md-button class="md-raised" style="background-color: #E66C54; margin-top: 10%;" id="button1"
+                   ng-click="OnLogin()">Add Sales
+        </md-button>
+    </div>
 </div>
