@@ -3,6 +3,8 @@ var app = angular.module('myapp');
 app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, $cookieStore,$cookies,$location,$routeParams) {
 
     // Retrieving the cookies values
+    $scope.msg = {};
+    $scope.crequest = {};
 
     $scope.userName = $cookies.get("uname");
     $scope.usersName = $cookies.get("name");
@@ -13,7 +15,9 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
     $scope.toggleLeft = buildToggler('left');
     $scope.toggleRight = buildToggler('right');
 
-    $scope.onpage = "profile";
+    $scope.toggle = false;
+
+    $scope.onpage = "home";
     $scope.mysale = function () {
         $scope.onpage = "mysale";
     };
@@ -152,5 +156,111 @@ app.controller('MembersAreaCtrl', function ($scope,$http, $timeout, $mdSidenav, 
 
     };
 
-});
+    $scope.showNotifications = function () {
 
+        $scope.toggle = !$scope.toggle;
+
+    };
+
+    $http({
+        method: 'POST',
+        url: 'http://www.ctex.16mb.com/FetchCompanyName.php',
+        data: null,
+        headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+    })
+        .success(function (data) {
+
+            if (data) {
+                $scope.name = data;
+
+            } else {
+
+                console.log("wrong");
+
+            }
+        })
+        .error(function (data) {
+            alert("error");
+        });
+
+
+    $scope.sendMessage = function () {
+
+        $scope.msg.senderid = id1;
+        $scope.msg.date = new Date();
+
+        console.log($scope.msg);
+        $http({
+            method: 'POST',
+            url: 'http://www.ctex.16mb.com/SendMessage.php',
+            data: $scope.msg,
+            headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+        })
+            .success(function (data) {
+
+                if (data) {
+                    $scope.feedback = data;
+                    console.log($scope.feedback);
+
+                } else {
+
+                    console.log("wrong");
+
+                }
+            })
+            .error(function (data) {
+                alert("error");
+            });
+    };
+
+    $http({
+        method: 'POST',
+        url: 'http://www.ctex.16mb.com/GetMessage.php',
+        data: idval,
+        headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+    })
+        .success(function (data) {
+
+            if (data) {
+                $scope.rmsg = data;
+
+            } else {
+
+                console.log("wrong");
+
+            }
+        })
+        .error(function (data) {
+            alert("error");
+        });
+
+    $scope.addSale = function () {
+
+        $scope.crequest.id = id1;
+        $scope.crequest.date = new Date();
+        console.log($scope.crequest);
+
+        $http({
+            method: 'POST',
+            url: 'http://www.ctex.16mb.com/MakeDeal.php',
+            data: $scope.crequest,
+            headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+        })
+            .success(function (data) {
+
+                if (data) {
+                    $scope.added = data;
+                    console.log($scope.added);
+
+                } else {
+
+                    console.log("wrong");
+
+                }
+            })
+            .error(function (data) {
+                alert("error");
+            });
+    };
+    
+});

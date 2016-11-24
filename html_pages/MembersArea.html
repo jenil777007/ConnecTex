@@ -8,7 +8,7 @@
 
         .div2 {
             margin-top: 40px;
-            height: 95%;
+        / / height: 95 %;
         }
 
         .md-virtual-repeat-offsetter div {
@@ -23,7 +23,6 @@
 
         .md-card-content {
             display: block;
-            padding-top: 0px;
         }
 
         .h4 {
@@ -39,15 +38,14 @@
             color: white;
             margin-left: 39%;
             width: 20%;
-            margin-bottom: 0%;
-            background-color: #E66C54;
+            background-color: #F47421;
         }
 
         #button1 {
             color: white;
             margin-top: 10%;
             width: 40%;
-            background-color: #E66C54;
+            background-color: #F47421;
         }
 
         .input3 {
@@ -69,14 +67,11 @@
             margin-bottom: -4%;
         }
 
-        .img {
-            height: 20%;
-        }
 
     </style>
 </head>
 <div>
-    <div style="background-color: #E66C54; height: 40px; width: 100%;">
+    <div style="background-color: #F47421; height: 40px; width: 100%;">
 
         <md-icon md-svg-src="img/micons/navigation/svg/production/ic_last_page_48px.svg" ng-click="toggleLeft()"
                  style="width: 40px; height: 40px;" class="hvr-bounce-in testRotate">
@@ -100,12 +95,25 @@
                 Log Out
             </md-tooltip>
         </md-icon>
-        <md-icon md-svg-src="img/micons/social/svg/production/ic_notifications_48px.svg" ng-click=""
+
+        <md-icon md-svg-src="img/micons/social/svg/production/ic_notifications_48px.svg" ng-click="showNotifications()"
                  style="float: right;margin-left: 1%;width: 40px; height: 40px;" class="hvr-bounce-in">
             <md-tooltip md-direction="bottom">
                 Messages
             </md-tooltip>
+
+
         </md-icon>
+        <div ng-show="toggle"
+             style="height: 213px; width: 350px; background-color: white;position: fixed;margin-top: 10px; margin-left:72.5%; z-index: 1; border: 1px solid #CFCFCF; box-shadow: 2px 2px 5px #EEEEEE; border-radius: 2px;overflow: scroll;">
+            <md-card ng-repeat="i in rmsg" style="height: 60px; width: 333px;background-color: #EEEEEE;">
+                <md-card-content class="md-card-content">
+                    <h5 style="color: #F47421;"><b>{{i.company_name}}</b></h5>
+                    <h6>{{i.message_txt}}</h6>
+
+                </md-card-content>
+            </md-card>
+        </div>
 
     </div>
 
@@ -113,9 +121,9 @@
 
         <section layout="row">
 
-            <md-sidenav class="div2" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+            <md-sidenav class="div2" md-component-id="left" md-whiteframe="4" flex>
                 <center>
-                    <md-toolbar class="md-theme-indigo" style="background-color: #E66C54 ">
+                    <md-toolbar class="md-theme-indigo" style="background-color: #F47421 ">
                         <md-card-header>
                             <md-card-avatar>
                                 <img class="md-user-avatar"
@@ -143,7 +151,7 @@
 
                     <md-content>
                         <h4 ng-click="mysale()">
-                            <md-button>My sale</md-button>
+                            <md-button>Add Sale</md-button>
                         </h4>
                     </md-content>
 
@@ -165,22 +173,23 @@
     </div>
 </div>
 
-<div ng-show="onpage == 'home' ">
+<div ng-show="onpage == 'home' " style="background-color: #EEEEEE;">
     <div style="width: 50%; margin-left: 20%">
         <md-input-container class="md-block">
             <label>Search</label>
             <input ng-model="text" type="text">
         </md-input-container>
     </div>
-    <label style="margin-left: 17%"><b>Featured</b></label> <label style="margin-left: 24%"><b>Find A Deal</b></label>
+    <label style="margin-left: 17%"><b>Featured</b></label>
+    <label style="margin-left: 28%"><b>Find A Deal</b></label>
     <label style="margin-left: 27%"><b>Trending</b></label>
-    <div layout="row" style="margin-top: 0%" class="animated bounceInDown">
-        <md-content layout="row" style="height: 500%; width: 100%;">
+    <div layout="row" style="" class="animated bounceInDown">
+        <md-content layout="row" style="height: 500%; width: 100%;background-color: #EEEEEE;">
             <div style="overflow: scroll; margin-left:9%; height: 450px; width: 340px;" class="">
-                <md-card ng-repeat="i in item | filter:text" style="height: 110px; width: 280px; padding-top: 0px">
+                <md-card ng-repeat="i in item | filter:text" style="height: 110px; width: 280px;">
                     <md-card-content class="md-card-content">
-                        <h5 style="margin-top: 4%; float: right; color: #E66C54">{{"₹" + " "+ i.price}}</h5>
-                        <h4 class="h4" style="color: #E66C54">{{i.material_name}}</h4>
+                        <h5 style="margin-top: 4%; float: right; color: #F47421">{{"₹" + " "+ i.price}}</h5>
+                        <h4 class="h4" style="color: #F47421">{{i.material_name}}</h4>
                         <h5>{{i.company_name}}</h5>
                         <label>Peak:{{i.peak}}</label> &nbsp;&nbsp;
                         <label>Width:{{i.material_width}}</label> &nbsp;&nbsp;
@@ -192,7 +201,7 @@
             <div style="overflow: scroll; margin-left: 5%; height: 450px; width: 340px;">
                 <md-card style="height: 870px; width: 280px;">
                     <md-card-content>
-                        <h4>Find deal via ConnecTex exclusively</h4>
+                        <center><h4>Find deal via ConnecTex exclusively</h4></center>
                         <label>Quality</label>
                         <md-select ng-model="crequest.quality" style="margin-top: -1%">
 
@@ -262,19 +271,22 @@
 
 </div>
 
-<div ng-show="onpage == 'mysale'" class="animated fadeInLeft">
-    <md-card style="height: 40%; width: 50%; margin-left: 27%; margin-top: 5%; ">
+<div ng-show="onpage == 'mysale'" class="animated fadeInLeft" style="background-color: #EEEEEE;">
+    <center>
+        <md-card style="height: 40%; width: 50%;  margin-top: 5%; ">
         <md-card-content style="margin-left: 1%;">
+            <center>
             <h2 style="margin-top: -1%">Make A Deal</h2>
-            <label style="margin-bottom: 0%">Quality</label>
-            <md-select ng-model="crequest.quality" style="margin-bottom: 0%; margin-top: 0%">
+            </center>
+            <label style="">Quality</label>
+            <md-select ng-model="crequest.quality" style="">
 
-                <md-option ng-repeat="qlt in material" ng-value="qlt.material_name" ng-disabled="$index === 1">
-                    {{qlt.material_name}}
+                <md-option ng-repeat="crequest in material" ng-value="crequest.id" ng-disabled="$index === 1">
+                    {{crequest.material_name}}
                 </md-option>
             </md-select>
 
-            <md-input-container class="md-block" style="margin-bottom: 0%">
+            <md-input-container class="md-block" style="">
                 <label style="color: #5F5F5F">Price</label>
                 <input ng-model="crequest.price" type="text">
             </md-input-container>
@@ -305,64 +317,70 @@
             </div>
 
 
-
-            <md-button class="md-raised" id="button" ng-click="OnLogin()">Submit</md-button>
+            <md-button class="md-raised" id="button" ng-click="addSale()">Submit</md-button>
 
         </md-card-content>
     </md-card>
+    </center>
 </div>
 
-<div ng-show="onpage == 'message'" class="animated fadeInLeft">
-
-    <md-card style="height: 500px; width: 450px; margin-left: 38%; margin-top: 40px">
+<div ng-show="onpage == 'message'" class="animated fadeInLeft" style="background-color: #EEEEEE;">
+    <center>
+        <md-card style="height: 500px; width: 450px;  margin-top: 40px">
+            <center>
         <md-card-content style="margin-left: 1%">
             <h2>Compose A Message</h2>
         </md-card-content>
-        <md-autocomplete
-                md-selected-item="MembersAreaCtrl.selectedItem"
-                md-search-text="MembersAreaCtrl.searchText"
-                md-items="item in MembersAreaCtrl.querySearch(ctrl.searchText)"
-                md-item-text="item.display"
-                md-min-length="0"
-                placeholder="TO: Search for a user here...">
-            <md-item-template>
-                <span md-highlight-text="MembersAreaCtrl    .searchText" md-highlight-flags="^i">{{item.display}}</span>
-            </md-item-template>
-        </md-autocomplete>
-        <md-card-content style="margin-left: 1%;margin-top: 20px;">
-            <textarea style="height: 150px;width: 400px;" placeholder="Type your message here..."></textarea>
+
+                <md-select ng-model="msg.username" style="">
+
+                    <md-option ng-repeat="msg in name | orderBy" ng-value="msg.id" ng-disabled="$index === 1">
+                        {{msg.company_name }}
+                    </md-option>
+                </md-select>
+
+                <md-card-content style="margin-top: 5%;">
+                    <textarea style="height: 150px;width: 90%;" placeholder="Type your message here..."
+                              ng-model="msg.message"></textarea>
         </md-card-content>
-        <md-button class="md-raised" style="margin-left: 1%;margin-top: 20px;">Send</md-button>
+                <md-button class="md-raised"
+                           style="margin-left: 1%;margin-top: 20px;background-color: #F47421;color: white;"
+                           ng-click="sendMessage()">Send
+                </md-button>
+            </center>
     </md-card>
+    </center>
 </div>
 
 
-<div ng-show="onpage == 'profile'" layout="row"
-     style="height: 94%;width: 100%;  position: absolute; background-color: #2098d1;">
+<div ng-show="onpage == 'profile'" layout="row" class="animated fadeInLeft"
+     style="height: 94%;width: 100%;  position: absolute; background-color: #EEEEEE;">
 
-    <div style="overflow: scroll;height: 64.5%; width: 30%; margin-left: 10%; margin-top: 10%;background-color: #0F9E5E">
+    <div style="overflow: scroll;height: 64.5%; width: 30%; margin-left: 10%; margin-top: 10%;">
         <md-card style="height: 95%; width: 80%; ">
             <md-card-content class="md-card-content">
                 <center>
-                    <img src="img/profile.jpg" style="height: 95%;width: 95%;margin-top: 1%;border-radius: 40%;">
+                    <img src="https://avatars3.githubusercontent.com/u/8577729?v=3&s=400"
+                         style="margin-top: 4%;height: 217px;width: 217px;border-radius: 5%;">
+                </center>
                     <p style="margin-top: 20px;">
-                        {{userCompanyName}}
+                        <i class="material-icons">account_circle</i> &nbsp;&nbsp;&nbsp; {{usersName}}
                     </p>
                     <p>
-                        {{usersName}}
+                        <i class="material-icons">business</i> &nbsp;&nbsp;&nbsp; {{userCompanyName}}
                     </p>
                     <p>
-                        {{userMobile}}
+                        <i class="material-icons">contact_phone</i> &nbsp;&nbsp;&nbsp; {{userMobile}}
                     </p>
                 </center>
                 </md-card-content>
             </md-card>
     </div>
-    <div style="overflow: scroll;height: 62.8%; width: 30%; margin-left: 10%; margin-top: 10%;background-color: #0F9E5E">
+    <div style="overflow: scroll;height: 62.8%; width: 30%; margin-left: 10%; margin-top: 10%;">
         <md-card ng-repeat="i in item2 | filter:text | filter: '!null'" style=";height: 110px; width: 280px;">
             <md-card-content class="md-card-content">
-                <h5 style="margin-top: 4%; float: right; color: #E66C54">{{"₹" + " "+ i.price}}</h5>
-                <h4 class="h4" style="color: #E66C54">{{i.material_name}}</h4>
+                <h5 style="margin-top: 4%; float: right; color: #F47421">{{"₹" + " "+ i.price}}</h5>
+                <h4 class="h4" style="color: #F47421">{{i.material_name}}</h4>
                 <h5>{{i.company_name}}</h5>
                 <label>Peak:{{i.peak}}</label> &nbsp;&nbsp;
                 <label>Width:{{i.material_width}}</label> &nbsp;&nbsp;
@@ -372,16 +390,16 @@
         </md-card>
         </div>
     <div style="height: 72.5%; width: 30%; margin-left: 10%; margin-top: 10%;">
-        <md-button class="md-raised" style="background-color: #E66C54; margin-top: 50%;" id="button1"
+        <md-button class="md-raised" style="background-color: #F47421; margin-top: 32.5%;" id="button1"
                    ng-click="OnLogin()">Update Profile
         </md-button>
         <br>
-        <md-button class="md-raised" style="background-color: #E66C54; margin-top: 10%;" id="button1"
+        <md-button class="md-raised" style="background-color: #F47421; margin-top: 10%;" id="button1"
                    ng-click="OnLogin()">Update Sales
         </md-button>
         <br>
-        <md-button class="md-raised" style="background-color: #E66C54; margin-top: 10%;" id="button1"
-                   ng-click="OnLogin()">Add Sales
+        <md-button class="md-raised" style="background-color: #F47421; margin-top: 10%;" id="button1"
+                   ng-click="mysale()">Add Sales
         </md-button>
     </div>
 </div>

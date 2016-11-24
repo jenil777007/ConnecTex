@@ -14,41 +14,33 @@ header('Access-Control-Allow-Methods: GET, POST, PUT');
 
   $post = json_decode(file_get_contents("php://input"), true);
 
-
-$price = $post["price"];
-$peak = $post["peak"];
-$reed = $post["reed"];
-$weight = $post["weight"];
-$width = $post["width"];
+$sid = $post["senderid"];
+$rid = $post["username"];
+$msg = $post["message"];
 $date = $post["date"];
-$material_id = $post["material_id"];
-$user_id = $post["id"];
 
 
-        if (empty($post['price']) || empty($post['peak']) || empty($post['reed']) || empty($post['weight']) || empty($post['width']) || empty($post['date']) || empty($post['material_id']) || empty($post['id']))
+
+        if (empty($post['senderid']) || empty($post['username']) || empty($post['message']) || empty($post['date']) )
               {
                       $response["success"] = false;
                       $response["message"] = "One or both of the fields are empty.";
                       die(json_encode($response));
               }else{
 
-                  $query = " INSERT INTO `request`(`user_id`, `material_id`, `material_width`, `material_weight`, `price`, `peak`, `fani`, `limits`, `created_date`) VALUES ('$user_id','$material_id','$width','$weight','$price','$peak','$reed','1','$date')";
+                  $query = " INSERT INTO `messages`( `from_user_id`, `to_user_id`, `message_txt`,  `created_date`) VALUES ('$sid','$rid','$msg','$date')";
                   $result = mysqli_query($connection->mycon,$query);
 
                     if ($result) {
                         $response["success"] = true;
-                                    $response["message"] = "Successfully Added";
+                                    $response["message"] = "Successfully Sent.";
                                     die(json_encode($response));
                      } else {
                        $response["success"] = false;
-                                   $response["message"] = "Not Added";
+                                   $response["message"] = "Not Sent.";
                                    die(json_encode($response));
                     }
-
-
-
               }
-
 
   mysqli_close($con);
   ?>

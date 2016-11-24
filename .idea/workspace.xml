@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/html_pages/MembersArea.html" line="196" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/html_pages/MembersArea.html" line="205" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="final 23-11">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/MakeDeal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/UserSaleInfo.php" />
+    <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="semi-final-25-11">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/FetchCompanyName.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/GetMessage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/SendMessage.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/angular-material.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/anim.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/hover-min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/loading-bar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-aria.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-cookies.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-material.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular-route.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/loading-bar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/pace.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/LoginCtrl.js" afterPath="$PROJECT_DIR$/controller/LoginCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHP/MakeDeal.php" afterPath="$PROJECT_DIR$/PHP/MakeDeal.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" afterPath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Login.html" afterPath="$PROJECT_DIR$/html_pages/Login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/MembersArea.html" afterPath="$PROJECT_DIR$/html_pages/MembersArea.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="ConnecTex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,29 +52,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/Register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="303" selection-start-line="25" selection-start-column="274" selection-end-line="25" selection-end-column="303" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendOtp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/SendOtp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="201">
+              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +64,8 @@
       <file leaf-file-name="MembersArea.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="334" column="58" selection-start-line="334" selection-start-column="58" selection-end-line="334" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -73,15 +73,18 @@
                 <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#1;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-card#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#md-card-avatar#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#2;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-card#0;n#div#0;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -101,27 +104,26 @@
                 <element signature="n#style#0;n#div#2;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-card#0;n#div#2;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#md-card-content#0;n#md-card#0;n#div#2;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-select#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-input-container#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#2;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#3;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-card-content#1;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#md-card-content#1;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#md-button#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#center#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#1;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#2;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#3;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-card-content#0;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-card-content#1;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#md-card-content#1;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#md-button#0;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#center#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#center#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-card#0;n#div#1;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h5#0;n#md-card-content#0;n#md-card#0;n#div#1;n#div#4;n#!!top" expanded="true" />
@@ -138,18 +140,28 @@
       <file leaf-file-name="MembersAreaCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+            <state relative-caret-position="125">
+              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHP/Request.php">
+      <file leaf-file-name="GetMessage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/GetMessage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="435">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendMessage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/SendMessage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -158,8 +170,18 @@
       <file leaf-file-name="MakeDeal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/MakeDeal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FetchCompanyName.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/FetchCompanyName.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -168,7 +190,7 @@
       <file leaf-file-name="UserSaleInfo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHP/UserSaleInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="495">
               <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding />
             </state>
@@ -178,8 +200,8 @@
       <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="147">
+              <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -237,27 +259,27 @@
         <option value="$PROJECT_DIR$/controller/RegisterCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/Register.html" />
         <option value="$PROJECT_DIR$/html_pages/chat.html" />
+        <option value="$PROJECT_DIR$/PHP/UserSaleInfo.php" />
+        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/Login.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/PHP/UserSaleInfo.php" />
-        <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
-        <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/PHP/MakeDeal.php" />
+        <option value="$PROJECT_DIR$/PHP/FetchCompanyName.php" />
+        <option value="$PROJECT_DIR$/PHP/SendMessage.php" />
+        <option value="$PROJECT_DIR$/PHP/GetMessage.php" />
+        <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/MembersArea.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -284,7 +306,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,20 +349,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnecTex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnecTex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -369,27 +377,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnecTex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ConnecTex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,6 +394,7 @@
     <property name="last_opened_file_path" value="C:/xampp/htdocs/srp" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Bhautik Gosai/Documents/ConnecTex/html_pages/MembersArea.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -529,6 +524,7 @@
       <workItem from="1479883310722" duration="1119000" />
       <workItem from="1479885191670" duration="10227000" />
       <workItem from="1479997320411" duration="6678000" />
+      <workItem from="1480006364573" duration="13857000" />
     </task>
     <task id="LOCAL-00001" summary="Added Title">
       <created>1470232391017</created>
@@ -751,7 +747,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224225000" />
+    <option name="totallyTimeSpent" value="238082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,11 +759,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21651785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2152502" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32650274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.49702382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -776,7 +773,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -822,7 +818,8 @@
     <MESSAGE value="final 19-11" />
     <MESSAGE value="final 20-11" />
     <MESSAGE value="final 23-11" />
-    <option name="LAST_COMMIT_MESSAGE" value="final 23-11" />
+    <MESSAGE value="semi-final-25-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="semi-final-25-11" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -832,9 +829,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/control.js" />
-    <entry file="file://$PROJECT_DIR$/controller/main.js" />
-    <entry file="file://$PROJECT_DIR$/controller/demo.js" />
     <entry file="file://$PROJECT_DIR$/PHP/Config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -890,13 +884,6 @@
     <entry file="file://$PROJECT_DIR$/lib/angular-material.min.css" />
     <entry file="file://$PROJECT_DIR$/img/Capture1.PNG" />
     <entry file="file://$USER_HOME$/Downloads/Busy.jpg" />
-    <entry file="file://$PROJECT_DIR$/html_pages/extra.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="205" column="23" selection-start-line="205" selection-start-column="23" selection-end-line="205" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/demo.html" />
     <entry file="file://$PROJECT_DIR$/membersarea.html" />
     <entry file="file://$PROJECT_DIR$/cover.html" />
@@ -985,41 +972,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/chat.html" />
     <entry file="file://$PROJECT_DIR$/PHP/Register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="375">
           <caret line="25" column="303" selection-start-line="25" selection-start-column="274" selection-end-line="25" selection-end-column="303" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/UserSaleInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="495">
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding />
         </state>
@@ -1035,16 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHP/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
+        <state relative-caret-position="435">
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/MakeDeal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1057,10 +1016,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/FetchCompanyName.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/SendMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/GetMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/MakeDeal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html_pages/extra.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1480">
+          <caret line="205" column="23" selection-start-line="205" selection-start-column="23" selection-end-line="205" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        <state relative-caret-position="147">
+          <caret line="334" column="58" selection-start-line="334" selection-start-column="58" selection-end-line="334" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1068,15 +1077,18 @@
             <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-card#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#md-card-avatar#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#md-card-header-text#0;n#md-card-header#0;n#md-toolbar#0;n#center#0;n#md-sidenav#0;n#section#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-card#0;n#div#0;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
@@ -1096,27 +1108,26 @@
             <element signature="n#style#0;n#div#2;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-card#0;n#div#2;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#md-card-content#0;n#md-card#0;n#div#2;n#md-content#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-select#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-input-container#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#1;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#2;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#3;n#md-card-content#0;n#md-card#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-card-content#1;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#md-card-content#1;n#md-card#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-button#0;n#md-card#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#center#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#0;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#1;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#2;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#md-input-container#0;n#div#3;n#md-card-content#0;n#md-card#0;n#center#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-card-content#0;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-card-content#1;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#md-card-content#1;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-button#0;n#center#0;n#md-card#0;n#center#0;n#div#3;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#center#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#center#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-card#0;n#div#1;n#div#4;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#md-card-content#0;n#md-card#0;n#div#1;n#div#4;n#!!top" expanded="true" />
@@ -1129,10 +1140,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+        <state relative-caret-position="125">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding />
         </state>
       </provider>
