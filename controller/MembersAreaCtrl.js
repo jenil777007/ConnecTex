@@ -43,19 +43,6 @@ app.controller('MembersAreaCtrl', function ($scope, $http, $timeout, $mdSidenav,
         last = angular.extend({}, current);
     }
 
-    var toast = function (abc) {
-        var pinTo = $scope.getToastPosition();
-        $mdToast.show(
-            $mdToast.simple()
-                .content(abc)
-                .position(pinTo)
-                .hideDelay(2000)
-        );
-
-    };
-
-
-
     $scope.onpage = "home";
     $scope.mysale = function () {
         $scope.onpage = "mysale";

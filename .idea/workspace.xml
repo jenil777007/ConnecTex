@@ -4,16 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/html_pages/MembersArea.html" line="205" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="semi-final-25-11">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHP/UpdateProfile.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html_pages/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html_pages/extra.html" afterPath="" />
+    <list default="true" id="3f493269-f5fc-4e04-bf4a-f5eac9d8e441" name="Default" comment="final-25-11">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/LoginCtrl.js" afterPath="$PROJECT_DIR$/controller/LoginCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Login.html" afterPath="$PROJECT_DIR$/html_pages/Login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" afterPath="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/MembersArea.html" afterPath="$PROJECT_DIR$/html_pages/MembersArea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Next.html" afterPath="$PROJECT_DIR$/html_pages/Next.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html_pages/Register.html" afterPath="$PROJECT_DIR$/html_pages/Register.html" />
     </list>
     <ignored path="ConnecTex.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="108" column="104" selection-start-line="108" selection-start-column="104" selection-end-line="108" selection-end-column="104" />
+              <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -80,8 +74,8 @@
       <file leaf-file-name="MembersArea.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="391" column="4" selection-start-line="391" selection-start-column="4" selection-end-line="391" selection-end-column="4" />
+            <state relative-caret-position="214">
+              <caret line="274" column="4" selection-start-line="274" selection-start-column="4" selection-end-line="274" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -145,6 +139,16 @@
                 <element signature="n#style#0;n#h5#0;n#md-card-content#0;n#md-card#0;n#div#1;n#div#4;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h4#0;n#md-card-content#0;n#md-card#0;n#div#1;n#div#4;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MembersAreaCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-525">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -223,12 +227,12 @@
         <option value="$PROJECT_DIR$/PHP/SendMessage.php" />
         <option value="$PROJECT_DIR$/PHP/GetMessage.php" />
         <option value="$PROJECT_DIR$/PHP/MakeDealViaConnectex.php" />
-        <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/Register.html" />
         <option value="$PROJECT_DIR$/html_pages/Next.html" />
         <option value="$PROJECT_DIR$/PHP/UpdateProfile.php" />
         <option value="$PROJECT_DIR$/controller/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/Login.html" />
+        <option value="$PROJECT_DIR$/controller/MembersAreaCtrl.js" />
         <option value="$PROJECT_DIR$/html_pages/MembersArea.html" />
       </list>
     </option>
@@ -485,7 +489,7 @@
       <workItem from="1479883310722" duration="1119000" />
       <workItem from="1479885191670" duration="10227000" />
       <workItem from="1479997320411" duration="6678000" />
-      <workItem from="1480006364573" duration="18706000" />
+      <workItem from="1480006364573" duration="19018000" />
     </task>
     <task id="LOCAL-00001" summary="Added Title">
       <created>1470232391017</created>
@@ -718,11 +722,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480025306762</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="final-25-11">
+      <created>1480028957767</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1480028957768</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242931000" />
+    <option name="totallyTimeSpent" value="243243000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -769,7 +780,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Added Title" />
     <MESSAGE value="Added Title 4" />
     <MESSAGE value="login page" />
     <MESSAGE value="phase 1 final" />
@@ -794,7 +804,8 @@
     <MESSAGE value="final 20-11" />
     <MESSAGE value="final 23-11" />
     <MESSAGE value="semi-final-25-11" />
-    <option name="LAST_COMMIT_MESSAGE" value="semi-final-25-11" />
+    <MESSAGE value="final-25-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="final-25-11" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1017,14 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="129" selection-start-line="2" selection-start-column="129" selection-end-line="2" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/Register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1064,7 +1067,7 @@
     <entry file="file://$PROJECT_DIR$/html_pages/Login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="108" column="104" selection-start-line="108" selection-start-column="104" selection-end-line="108" selection-end-column="104" />
+          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -1078,10 +1081,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controller/MembersAreaCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html_pages/MembersArea.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="391" column="4" selection-start-line="391" selection-start-column="4" selection-end-line="391" selection-end-column="4" />
+        <state relative-caret-position="214">
+          <caret line="274" column="4" selection-start-line="274" selection-start-column="4" selection-end-line="274" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#md-icon#0;n#div#0;n#div#0;n#!!top" expanded="true" />
