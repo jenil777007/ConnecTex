@@ -11,8 +11,14 @@
 
         body {
             font-family: 'Rasa', serif;
-        / / background-color: #f2f2f2;
             font-size: 22px;
+        }
+
+        .input1 {
+            margin-left: 2%;
+            margin-top: -1%;
+            width: 95%;
+            margin-bottom: 0%;
         }
 
         .div1 {
@@ -23,9 +29,6 @@
             bottom: 0;
             right: 0;
             background-color: transparent;
-        / / margin-top: 5 %;
-        / / margin-left: 37 %;
-        / / margin-bottom: 1 %;
             width: 25%;
             height: 60%;
             border-radius: 5px;
@@ -46,8 +49,8 @@
 
     </style>
 </head>
-<body>
-<div>
+
+<div ng-show="onpage=='login'">
 
     <div style="top: 0;right: 0;bottom: 0;left: 0;overflow:hidden;z-index: -100;">
         <video autoplay loop>
@@ -76,7 +79,7 @@
                     <md-button class="md-raised" id="button" ng-click="OnLogin()">Login</md-button>
                     <br><br>
 
-                    <a href="" style="color: ghostwhite">Forgot Password?</a><br><br>
+                    <a href="" style="color: ghostwhite" ng-click="forgotpwd()">Forgot Password ?</a><br><br>
                     <label style="color: ghostwhite">Not Registered Yet??</label>
                     <a href="#Register" style="color: aliceblue">Sign Up Here</a>
                 </center>
@@ -85,5 +88,50 @@
     </div>
 
 
+</div>
+<div ng-show="onpage=='update'">
+
+
+    <div style="top: 0;right: 0;bottom: 0;left: 0;overflow:hidden;z-index: -100;">
+        <video autoplay loop>
+            <source src="Busy/MP4/Busy.mp4" type="video/mp4" alt="Busy/Snapshots/Busy.jpg"/>
+            Your browser does not support the video tag. We suggest you to upgrade your browser.
+        </video>
+    </div>
+
+
+    <form name="forgotform" novalidate>
+
+
+        <div class="div1">
+
+            <center>
+                <md-button class="md-raised" id="button" ng-click="back()">Back</md-button>
+            </center>
+
+            <md-input-container class="input1">
+                <label style=" color: white">Enter Your Email</label>
+                <input ng-model="user1.email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                       style="color: white" required>
+            </md-input-container>
+
+            <md-input-container class="input1">
+                <label style=" color: white">Password</label>
+                <input ng-model="user1.password" type="password" style="color: white" required>
+            </md-input-container>
+
+            <md-input-container class="input1">
+                <label style="color: white">Retype Password</label>
+                <input ng-model="user1.cpassword" type="password" style="color: white" required>
+            </md-input-container>
+
+            <center>
+                <md-button type="submit" class="md-raised" ng-click="forgotform.$valid && OnNext()" id="button">Next
+                </md-button>
+            </center>
+
+
+        </div>
+    </form>
 </div>
 </body>

@@ -3,8 +3,10 @@ var app = angular.module('myapp');
 app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog","$mdToast","$cookieStore",function ($scope,$http,$location,$timeout,$mdDialog,$mdToast,$cookieStore) {
 
     $scope.isloaded = false;
-    console.log("welcome");
+    $scope.onpage = "login";
+    
     $scope.user = {};
+    $scope.user1 = {};
     $scope.user.Username = "nikhilsojitra0009@gmail.com";
     $scope.user.Password = "844e3ec00b011b120326834795314b71";
 
@@ -97,6 +99,65 @@ app.controller("LoginCtrl",["$scope","$http","$location","$timeout","$mdDialog",
         $scope.isloaded = true;
     }, 2500);
 
+    $scope.forgotpwd = function () {
+
+        $scope.onpage = "update";
+
+
+    };
+
+    $scope.back = function () {
+
+        $scope.onpage = "login";
+
+
+    };
+
+
+    $scope.OnNext = function () {
+
+        var toast = function (abc) {
+            var pinTo = $scope.getToastPosition();
+            $mdToast.show(
+                $mdToast.simple()
+                    .content(abc)
+                    .position(pinTo)
+                    .hideDelay(2000)
+            );
+
+        };
+
+
+        $http({
+            method: 'POST',
+            url: 'http://www.ctex.16mb.com/UpdateProfile.php',
+            data: $scope.user1,
+            headers: {'Content-Type': 'application/x-www-form-unlencoded'}
+        })
+            .success(function (data) {
+
+                if (data.success) {
+                    $scope.message = data.message;
+                    console.log(data);
+
+                    // Storing data values in to cookies
+
+
+                    toast($scope.message);
+                    $scope.onpage = "login";
+                } else {
+                    $scope.message = data.message;
+                    console.log($scope.message);
+                    toast($scope.message);
+                }
+            })
+            .error(function (data) {
+                alert("error");
+            });
+
+
+    };
+    
    
 
 }]);
